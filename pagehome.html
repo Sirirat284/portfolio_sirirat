@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio ของฉัน</title>
+    <link rel="stylesheet" href="css/styles_body.css"> <!-- ลิงก์ไปยังไฟล์ CSS -->
+    <link rel="stylesheet" href="css/style_foot.css"> 
+    <link rel="stylesheet" href="css/styles_head.css"> 
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header >
+        <div>
+            <h2 style="display: inline; margin-left: 20px; color: white;">Portfolio</h2>
+            <h4 style="display: inline; color: white;">Mr. Sirirat Sanghkao</h4>
+        </div>
+        <nav style="display: flex; margin-right: 150px;">
+            <a href="#home" style="color: white; margin-right: 10px; text-decoration: none;">Home</a>
+            <a href="#about" style="color: white; margin-right: 10px; text-decoration: none;">Profile</a>
+            <a href="#portfolio" style="color: white; text-decoration: none;  margin-right: 10px;">Competitions</a>
+            <a href="#projects" style="color: white; text-decoration: none;  margin-right: 10px;">Projects</a>
+            <a href="#activity" style="color: white; text-decoration: none; margin-right: 10px;">Activities</a>
+            <a href="#contact" style="color: white; text-decoration: none; margin-right: 10px;">Contact</a>
+        </nav>
+    </header>    
+    
+    <div id="home" class="background">
+        <div class="greeting-text">
+            <h1>Hello welcome to Portfolio</h1>
+            <h4>Mr.Sirirat Sanghkao</h4>
+            <p>ยินดีต้อนรับเข้าสู้ Portfolio ของ นาย ศิริรัฐ สังข์ขาว</p>
+        </div>
+    </div>
+    <section id="about" style="background-color: #ffffff; padding: 20px;">
+        <h2 style="text-align: center; color: #0056b3;">Personal Information</h2>
+        <div class="container" style="display: flex; justify-content: center; align-items: center; max-width: 800px; margin: auto;">
+            <div class="profile-image" style="margin-right: 20px;">
+                <img src="image/IMG_5865.JPG" alt="Your Name" style="width: 200px; height: auto; border-radius: 10px;">
+            </div>
+            <div class="profile-info" style="flex-grow: 1;">
+                <p><strong >Name:</strong> Mr.Sirirat Sanghkao <strong>Nickname:</strong> Dodo</p>
+                <p><strong>Age:</strong> 22 <strong>years old</strong></p>
+                <p><strong>Education:</strong> Bachelor's Degree</p>
+                <p><strong>Faculty:</strong> Faculty of Science <strong>Major:</strong> Computer Science</p>
+                <p><strong>King Mongkut's Institute of Technology Ladkrabang</strong> </p>
+                <p><strong>GPA :</strong> 3.05 </p>
+                <p><strong>Skills :</strong> Java(basic), Python, Node JS, Next JS(basic), HTML&CSS&JavaScript(basic), PHP(basic), SQL, Machine Learning&Deep Learning, Analysis Data</p>
+                <p><strong>Tools :</strong> Pandas, Numpy, Scikitlearn, TensorFlow, Karas, Matpotlib, Seaborn, GITHUB </p>
+                <p><strong>Programs :</strong> Tableau, VS Code, Microsoft (Word, Excel, PowerPoint), Adobe(Photo shop, Lightroom, Premiere pro), Canva </p>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    <br>
+    <h2 id="portfolio" style="text-align: center; color: #0056b3;">Competition Results</h2>
+    <div  class="portfolio-section">
+        <div class="portfolio" onclick="this.classList.toggle('is-flipped')">
+            <div class="portfolio-inner">
+                <div class="portfolio-front">
+                    <img src="image/code_arcade.png" alt="Certificate_code_arcade">
+                    <h2>Code Arcade 2021 Booster</h2>
+                    <button>Details</button>
+                </div>
+                <div class="portfolio-back">
+                    <h2>Competition Details</h2>
+                    <p><strong>Award : </strong> Bronze Medal</p>
+                    <p>The competition involves Java programming to solve specific problems, primarily organized for Computer Science students in their 1st to 4th year who are interested and wish to demonstrate their skills. They are encouraged to participate in the competition.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio" onclick="this.classList.toggle('is-flipped')">
+            <div class="portfolio-inner">
+                <div class="portfolio-front">
+                    <img src="image/Sas.png" alt="Certificate">
+                    <h2>SAS X KMITL Hackathon</h2>
+                    <button>Details</button>
+                </div>
+                <div class="portfolio-back"  >
+                    <h2>Competition Details</h2>
+                    <p><strong>Award : </strong> Goal Medal</p>
+                    <p>The competition, organized by Double P in collaboration with KMITL, is focused on creating Machine Learning models for data prediction based on assigned tasks. This time, the challenge is to predict whom to contact for donations to achieve the highest net amount after deducting telephone costs, utilizing customer data from previous years' donations. Participants are required to use SAS software exclusively to develop their models for the competition.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio" onclick="this.classList.toggle('is-flipped')">
+            <div class="portfolio-inner">
+                <div class="portfolio-front">
+                    <img src="image/ASEAN .png" alt="Certificate">
+                    <h2>ASEAN Data Science Explorers</h2>
+                    <button>Details</button>
+                </div>
+                <div class="portfolio-back" >
+                    <h2>Competition Details</h2>
+                    <p><strong>Award : </strong> Participation</p>
+                    <p>The competition involves analyzing problems occurring within ASEAN, referencing the Sustainable Development Goals (SDGs). This competition aims to identify key information about the issues and present solutions to the committee for addressing these problems.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <br>
+    <div id="projects" class="project-section" style="background-color: #ffffff;">
+        <h2 style="text-align: center; color: #0056b3;">Project Achievements</h2>
+        <div class="project">
+            <a href="senoir_project.html" style="text-decoration: none; color: inherit;">
+                <div class="project-inner">
+                    <div class="">
+                        <img src="image/senoirproject.png" alt="Project">
+                        <h5>Court Verdict Classification and Prediction in Thai Juvenile and Family Courts <strong style="color: red;">(Graduation Project)</strong></h5>
+                        <button>Details</button>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- สามารถเพิ่มโปรเจกต์เพิ่มเติมได้โดยการคัดลอก <div class="project"> และปรับเปลี่ยนข้อมูลภายใน -->
+        <div class="project">
+            <a href="credit.html" style="text-decoration: none; color: inherit;">
+                <div class="project-inner">
+                    <div class="">
+                        <img src="image/credit1.png" alt="Project">
+                        <h3>Credit Card Approval Prediction</h3>
+                        <br><br>
+                        <button>Details</button>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="project">
+            <a href="image_classifier.html" style="text-decoration: none; color: inherit;">
+                <div class="project-inner">
+                    <div class="">
+                        <img src="image/botnoi2.png" alt="Project">
+                        <h3 style="padding: 3px;">Develop a model to classify popular dog and cat breeds in Thailand from images <strong style="color: red;">(Internship Project)</strong></h3>
+                        <button>Details</button>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="project">
+            <a href="restaurant.html" style="text-decoration: none; color: inherit;">
+                <div class="project-inner">
+                    <div class="">
+                        <img src="image/restaurant1.png" alt="Project">
+                        <h3 style="padding: 3px;">Restaurant and Food Menu Recommendation System</h3>
+                        <br>
+                        <button>Details</button>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="project">
+            <a href="chatbot.html" style="text-decoration: none; color: inherit;">
+                <div class="project-inner">
+                    <div class="">
+                        <img src="image/chatbot1.png" alt="Project">
+                        <h3 style="padding: 3px;">Career Path Interest-Based Course Recommendation Chatbot</h3>
+                        <button>Details</button>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <br>
+    
+    <h2 id="activity" style="text-align: center; color: #0056b3;">Activities</h2>
+    <div class="activity">
+        <div class="activity-item">
+            <img src="https://scontent.fbkk13-1.fna.fbcdn.net/v/t39.30808-6/274576603_10159943165824362_7543356225677631016_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeEVvf2OVDIpRCZROztLU1xUsjDqy8QDX1OyMOrLxANfU35VA1OJsJprBTnxj7yGnYVX0TE8Rqcfg-KlYoaLdUwF&_nc_ohc=jRCmbTACYB0AX9gquIx&_nc_ht=scontent.fbkk13-1.fna&cb_e2o_trans=t&oh=00_AfCfhzuvMLL3x3uuytlZVy-T6rFsLLlmwm-sODB6olc5eA&oe=65D852E9" alt="Activity Image" class="activity-image">
+            <div class="activity-content">
+                <h2> CS Camp 14</h2>
+                <p><strong>Position: </strong>Head of Public Relations</p>
+                <p><strong>Event Details: </strong>This is a camp organized by the Computer Science department, designed for high school students interested in pursuing further education at KMITL's Computer Science faculty. It offers an opportunity to experience the teaching and learning environment, along with various workshops, over a full five days.
+                </p>
+            </div>
+        </div>
+        <div class="activity-item">
+            <img src="image/IMG_7216.jpg" alt="Activity Image" class="activity-image">
+            <div class="activity-content">
+                <h2>Science Faculty Photography Club</h2>
+                <p><strong>Position: </strong>photographer</p>
+                <p><strong>Event Details: </strong>This is a club involved in photographing events within the Science Faculty. I have been working with this club for a period of 3 years.
+                </p>
+            </div>
+        </div>
+        <div class="activity-item">
+            <img src="image/IMG_9762.JPG" alt="Activity Image" class="activity-image">
+            <div class="activity-content">
+                <h2>Code Arcade Competition Event</h2>
+                <p><strong>Position: </strong>Contestant</p>
+                <p><strong>Event Details: </strong>
+                    This is a Java programming competition aimed at solving specified problems, specifically organized for Computer Science students from 1st to 4th year who are interested and want to test their skills. They are encouraged to participate in the competition.
+                </p>
+            </div>
+        </div>
+        <div class="activity-item">
+            <img src="image/IMG_0400.JPG" alt="Activity Image" class="activity-image">
+            <div class="activity-content">
+                <h2>SAS X KMITL Hackathon Competition Event</h2>
+                <p><strong>Position: </strong>Contestant</p>
+                <p><strong>Event Details: </strong>
+                    This is a competition related to data analysis and the development of Machine Learning models for future data prediction based on assigned tasks.
+                </p>
+            </div>
+        </div>
+        <div class="activity-item">
+            <img src="image/IMG_8141.JPG" alt="Activity Image" class="activity-image">
+            <div class="activity-content">
+                <h2>CS Connection Event</h2>
+                <p><strong>Position: </strong>Event Participant</p>
+                <p><strong>Event Details: </strong>
+                    his event is organized by the department and will feature alumni and various companies to share knowledge about different career paths of interest, aimed at benefiting students who are interested. Participation in the event is voluntary.
+                </p>
+            </div>
+        </div>
+        <div class="activity-item">
+            <img src="image/IMG_9455.JPG" alt="Activity Image" class="activity-image">
+            <div class="activity-content">
+                <h2>Sports for Relationship Building Event(กิจกรรม กีฬาสานสัมพันธ์ แคแสด)</h2>
+                <p><strong>Position: </strong>STAFF</p>
+                <p><strong>Event Details: </strong>
+                    The event is organized to foster relationships among faculties, and between senior and junior students and peers, to promote unity, mutual support, and harmony. The activities aim to improve physical health, uplift spirits, and offer fun experiences, teaching participants to accept wins and losses and to forgive each other, embodying true sportsmanship. This event serves as a foundation for building good health and organizing creative activities, allowing all students to participate and interact positively, preparing them for effective teamwork in the future.
+                </p>
+            </div>
+        </div>
+        <div class="activity-item">
+            <img src="image/IMG_6618.JPG" alt="Activity Image" class="activity-image">
+            <div class="activity-content">
+                <h2>Botnoi Hackathon Competition Event</h2>
+                <p><strong>Position: </strong>STAFF</p>
+                <p><strong>Event Details: </strong>
+                    Botnoi OpenAI HackFest is a competition seeking teams of developers who can best apply AI to solve business challenges. Winners receive exclusive rights, opportunities to further develop their ideas, and support from leading partners and companies in Thailand.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <section id="contact">
+        <h2 id="contact" style="text-align: center; color: #0056b3;">Contact Me</h2>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:siriratsanghkao@gmail.com">siriratsanghkao@gmail.com</a></p>
+            <p>Phone: <a href="tel:0927483260">0927483260</a></p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/Sirirat401?mibextid=kFxxJD" target="_blank"><img src="image/icons8-facebook-500.png" width="50" height="50"></a>
+                <a href="https://line.me/ti/p/mQ3EGBw0Em" target="_blank"><img src="image/icons8-line-96.png" width="50" height="50"></a>
+                <!-- <a href="https://www.instagram.com/sirirat_sk?igsh=bTRwODB4OTQzdm1x&utm_source=qr" target="_blank"><img src="image/icons8-ig-96.png" width="50" height="50"></a> -->
+                <a href="https://github.com/Sirirat284" target="_blank"><img src="image/icons8-github-100.png" width="50" height="50"></a>
+                <a href="https://www.linkedin.com/in/sirirat-sanghkao-6759ab285/" target="_blank"><img src="image/icons8-linkedin-96.png" width="50" height="50"></a>
+                <!-- Add more social links as needed -->
+            </div>
+        </div>
+    </section>
+      
+    <footer>
+        <p>&copy; 2023 Sirirat Sanghkao. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>

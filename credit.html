@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details</title>
+    <link rel="stylesheet" href="css/style_project.css"> <!-- หากมีไฟล์ CSS แยก -->
+</head>
+<body>
+    <header>
+        <h3>Credit Card Approval Prediction</h3>
+    </header>
+
+    <section class="project-details">
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="image/credit1.png" alt="Image 1"></div>
+                <div class="slide"><img src="image/credit2.png" alt="Image 2"></div>
+                <div class="slide"><img src="image/credit3.png" alt="Image 3"></div>
+                <div class="slide"><img src="image/credit4.png" alt="Image 4"></div>
+                <!-- เพิ่มรูปภาพเพิ่มเติมตามต้องการ -->
+            </div>
+            <div style="text-align:center">
+                <span class="slider-button" onclick="currentSlide(1)"></span>
+                <span class="slider-button" onclick="currentSlide(2)"></span>
+                <span class="slider-button" onclick="currentSlide(3)"></span>
+                <span class="slider-button" onclick="currentSlide(4)"></span>
+                <!-- เพิ่ม span สำหรับแต่ละรูปภาพ -->
+            </div>
+        </div>
+        <h2>Project Name</h2>
+        <p>Credit Card Approval Prediction</p>
+        <h2>Project Details</h2>
+        <p>
+            Develop a web application and a Machine Learning model to predict the likelihood of a customer being approved or rejected for a credit card application by a bank, using the "credit-card-approval-prediction" dataset. In this project, basic data management techniques such as data cleaning, data transformation, data reduction, and addressing imbalance data issues were employed before training the model.
+        </p>
+
+        <h2>Tools</h2>
+        <ul>
+            <li>Google colab</li>
+            <li>VS Code</li>
+            <li>pandas</li>
+            <li>tensorflow</li>
+            <li>numpy</li>
+            <li>sklearn</li>
+            <li>matplotlib</li>
+            <!-- เพิ่มเทคโนโลยีอื่นๆ ที่ใช้ -->
+        </ul>
+        <h2>Programming Languages</h2>
+        <ul>
+            <li>Python</li>
+            <li>Next JS</li>
+            <li>Node JS</li>
+            <!-- เพิ่มเทคโนโลยีอื่นๆ ที่ใช้ -->
+        </ul>
+
+        <!-- <h2>Project Link</h2>
+        <a href="https://example.com">Visit the project</a>
+
+        <h2>Source Code</h2>
+        <a href="https://github.com/example/project">GitHub Repository</a> -->
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Sirirat Sanghkao. All rights reserved.</p>
+    </footer>
+    <script>
+      let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // ฟังก์ชันเพิ่มหรือลด index และแสดงสไลด์
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // ฟังก์ชันตั้งค่าสไลด์ปัจจุบันตาม n
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        // ฟังก์ชันแสดงสไลด์
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slide");
+        let dots = document.getElementsByClassName("slider-button");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        }
+    </script>
+</body>
+</html>

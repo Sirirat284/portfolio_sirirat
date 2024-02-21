@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details</title>
+    <link rel="stylesheet" href="css/style_project.css"> <!-- หากมีไฟล์ CSS แยก -->
+</head>
+<body>
+    <header>
+        <h3>Restaurant and Food Menu Recommendation System</h3>
+    </header>
+
+    <section class="project-details">
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="image/restaurant1.png" alt="Image 1"></div>
+                <div class="slide"><img src="image/restaurant2.png" alt="Image 2"></div>
+                <div class="slide"><img src="image/restaurant3.png" alt="Image 3"></div>
+                <!-- <div class="slide"><img src="image/cnn.png" alt="Image 4"></div> -->
+                <!-- เพิ่มรูปภาพเพิ่มเติมตามต้องการ -->
+            </div>
+            <div style="text-align:center">
+                <span class="slider-button" onclick="currentSlide(1)"></span>
+                <span class="slider-button" onclick="currentSlide(2)"></span>
+                <span class="slider-button" onclick="currentSlide(3)"></span>
+                <!-- <span class="slider-button" onclick="currentSlide(4)"></span> -->
+                <!-- เพิ่ม span สำหรับแต่ละรูปภาพ -->
+            </div>
+        </div>
+        <h2>Project Name</h2>
+        <p>Restaurant and Food Menu Recommendation System</p>
+        <h2>Project Details</h2>
+        <p>
+            Create a web application to display all the restaurants within a university campus to solve the problem for outsiders who come for business and do not know what restaurants are available, or for students who are unaware of the dining options on campus. Users should be able to filter restaurants based on their preferences, such as à la carte restaurants, noodle shops, etc., or by religion, like Halal restaurants, which are scarce within the university. The system will show the name, location, and menu of each restaurant, allowing users to make informed decisions, including the ratings of each restaurant.
+        </p>
+
+        <h2>Tools</h2>
+        <ul>
+            <li>VS CODE</li>
+            <li>POSTMAN</li>
+            <li>DBeaver</li>
+            <!-- เพิ่มเทคโนโลยีอื่นๆ ที่ใช้ -->
+        </ul>
+        <h2>Programming Languages</h2>
+        <ul>
+            <li>Next JS</li>
+            <li>Node JS</li>
+            <li>SQL</li>
+            <!-- เพิ่มเทคโนโลยีอื่นๆ ที่ใช้ -->
+        </ul>
+
+        <!-- <h2>Project Link</h2>
+        <a href="https://example.com">Visit the project</a>
+
+        <h2>Source Code</h2>
+        <a href="https://github.com/example/project">GitHub Repository</a> -->
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Sirirat Sanghkao. All rights reserved.</p>
+    </footer>
+    <script>
+      let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // ฟังก์ชันเพิ่มหรือลด index และแสดงสไลด์
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // ฟังก์ชันตั้งค่าสไลด์ปัจจุบันตาม n
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        // ฟังก์ชันแสดงสไลด์
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slide");
+        let dots = document.getElementsByClassName("slider-button");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+/* สไตล์สำหรับ header */
+
+/* header {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 20px 0;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    position: fixed; 
+    top: 0; 
+    width: 100%;  
+    z-index: 1000;
+} */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0056b3; /* Example background color */
+    z-index: 1000; /* Ensure header is above other content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* Adjust as needed */
+  }
+nav a {
+    transition: transform 0.3s ease;
+}
+
+nav a:hover {
+    transform: scale(1.1); /* ขยายขึ้นเมื่อเมาส์ชี้ */
+}
+/* การตั้งค่าพื้นฐานสำหรับหน้าจอขนาดใหญ่ */
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Media Queries สำหรับหน้าจอขนาดเล็ก (เช่น สมาร์ทโฟน) */
+@media (max-width: 768px) {
+    header {
+        position: static;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header > div, nav {
+        width: 100%; /* ให้ <div> และ <nav> ใน header ครอบคลุมทั้งหน้าจอ */
+        padding: 10px 0; /* เพิ่ม padding ให้มีพื้นที่ระหว่างเนื้อหา */
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column; /* จัดเรียงลิงก์ในแนวตั้ง */
+        align-items: center; /* จัดกลางลิงก์ในแนวนอน */
+        margin-top: 20px; /* ปรับระยะห่างจากส่วนอื่นๆ ของ header */
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+    .header-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 20px; /* กำหนดช่องว่างระหว่าง elements */
+    }
+}
+

@@ -1,0 +1,147 @@
+/* ตั้งค่าพื้นฐาน */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* ปรับเปลี่ยนฟอนต์เพื่อความเป็นทางการ */
+    line-height: 1.8; /* ปรับเพิ่มระยะห่างของบรรทัด */
+    margin: 0;
+    padding: 0;
+    background: #fafafa; /* ปรับเปลี่ยนสีพื้นหลังเป็นสีที่อ่อนละมุนกว่า */
+}
+
+
+header {
+    background: #0056b3; /* ปรับเป็นสีที่มีความเป็นทางการมากขึ้น */
+    color: #ffffff;
+    padding-top: 20px;
+    min-height: 80px; /* ปรับขนาดสูงเพิ่มเล็กน้อย */
+}
+
+header  {
+    text-align: center;
+    margin: 0;
+}
+
+.project-details {
+    background: #ffffff;
+    padding: 30px; /* ปรับเพิ่มระยะห่างในการแพดดิ้ง */
+    margin: 30px auto;
+    max-width: 900px; /* ปรับขยายความกว้าง */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* ปรับเงาให้เด่นขึ้น */
+    border-radius: 8px; /* เพิ่มโค้งมนให้กับขอบ */
+}
+
+.project-details h2 {
+    color: #0056b3; /* ปรับสีให้เข้ากับธีม */
+    margin-top: 20px; /* ปรับระยะห่างสำหรับหัวข้อย่อย */
+}
+
+.project-image img {
+    max-width: 100%; /* ทำให้รูปภาพไม่เกินขอบของ container */
+    height: auto; /* รักษารูปแบบของรูปภาพ */
+
+}
+
+
+.project-details ul {
+    list-style-type: square; /* ปรับเปลี่ยนสไตล์ของลิสต์ */
+    margin-left: 20px; /* ปรับระยะห่างของลิสต์ */
+}
+
+.project-details ul li {
+    background: none; /* ลบพื้นหลัง */
+    color: #333; /* ปรับสีของข้อความในลิสต์ */
+    margin: 10px 0; /* ปรับระยะห่างของแต่ละไอเท็ม */
+}
+
+.project-details a {
+    background: #0056b3; /* ปรับสีปุ่ม */
+    color: #ffffff;
+    padding: 12px 25px; /* ปรับขนาดปุ่ม */
+    font-weight: bold; /* ทำให้ข้อความหนาขึ้น */
+    border-radius: 5px; /* โค้งมนขอบปุ่ม */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* เพิ่มเงาให้ปุ่ม */
+}
+
+.slider {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+}
+
+.slides .slide {
+    display: none;
+}
+
+.slide img {
+    max-width: 100%; /* รูปภาพจะไม่เกินขนาดของ container */
+    height: auto; /* รักษาอัตราส่วนของรูปภาพ */
+}
+.slide img {
+    display: flex;
+    justify-content: center; /* จัดกลางแนวนอน */
+    align-items: center; /* จัดกลางแนวตั้ง, ถ้าจำเป็น */
+    width: auto;
+    height: auto;
+    max-height: 500px;
+}
+@media (max-width: 768px) {
+    .slide  img {
+        max-width: 95%; /* หรือขนาดที่เหมาะสมกับการดูบนมือถือ */
+    }
+}
+/* จัดสไตล์ปุ่มกลม */
+.slider-button {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.slider-button.active, .slider-button:hover {
+    background-color: #717171;
+}
+
+/* จัดสไตล์ปุ่มเลื่อน */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,1);
+}
+
+
+
+footer {
+    background: #0056b3; /* ปรับให้สอดคล้องกับ header */
+    color: #ffffff;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px; /* ปรับระยะห่างจากเนื้อหาส่วนบน */
+}

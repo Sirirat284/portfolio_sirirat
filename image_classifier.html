@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details</title>
+    <link rel="stylesheet" href="css/style_project.css"> <!-- หากมีไฟล์ CSS แยก -->
+</head>
+<body>
+    <header>
+        <h3>Develop a model to classify popular dog and cat breeds in Thailand from images</h3>
+    </header>
+
+    <section class="project-details">
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="image/botnoi2.png" alt="Image 1"></div>
+                <div class="slide"><img src="image/botnoi1.png" alt="Image 2"></div>
+                <div class="slide"><img src="image/botnoi3.png" alt="Image 3"></div>
+                <!-- <div class="slide"><img src="image/cnn.png" alt="Image 4"></div> -->
+                <!-- เพิ่มรูปภาพเพิ่มเติมตามต้องการ -->
+            </div>
+            <div style="text-align:center">
+                <span class="slider-button" onclick="currentSlide(1)"></span>
+                <span class="slider-button" onclick="currentSlide(2)"></span>
+                <span class="slider-button" onclick="currentSlide(3)"></span>
+                <!-- <span class="slider-button" onclick="currentSlide(4)"></span> -->
+                <!-- เพิ่ม span สำหรับแต่ละรูปภาพ -->
+            </div>
+        </div>
+        <h2>Project Name</h2>
+        <p>Develop a model to classify popular dog and cat breeds in Thailand from images</p>
+        <h2>Project Details</h2>
+        <p>
+            Develop a model for image classification using the LinearSVC (Support Vector Machine) model as educational content for a course offered by the company to the general public interested in Data Science. This project involves techniques such as image size reduction to decrease data volume, converting image data into vectors, and training the LinearSVC (SVM) model. Additionally, write a blog on Medium to explain the basic principles for those interested in this type of work, and create a website for users to try out the model via Streamlit.
+        </p>
+
+        <h2>Tools</h2>
+        <ul>
+            <li>Google colab</li>
+            <li>pandas</li>
+            <li>tensorflow</li>
+            <li>numpy</li>
+            <li>sklearn</li>
+            <li>matplotlib</li>
+            <li>Streamlit</li>
+            <!-- เพิ่มเทคโนโลยีอื่นๆ ที่ใช้ -->
+        </ul>
+        <h2>Programming Languages</h2>
+        <ul>
+            <li>Python</li>
+            <!-- เพิ่มเทคโนโลยีอื่นๆ ที่ใช้ -->
+        </ul>
+
+        <h2>Project Link</h2>
+        <a href="https://sirirat284-image-classification-botnoi-app-e0zzmy.streamlit.app">Project Visit</a>
+
+        <h2>Medium Link</h2>
+        <a href="https://medium.com/@DodoSirirat/image-classification-108ebbb19514">Medium Visit</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Sirirat Sanghkao. All rights reserved.</p>
+    </footer>
+    <script>
+      let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // ฟังก์ชันเพิ่มหรือลด index และแสดงสไลด์
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // ฟังก์ชันตั้งค่าสไลด์ปัจจุบันตาม n
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        // ฟังก์ชันแสดงสไลด์
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slide");
+        let dots = document.getElementsByClassName("slider-button");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        }
+    </script>
+</body>
+</html>

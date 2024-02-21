@@ -1,0 +1,366 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ececec;
+}
+
+/*ส่วนของ welcome*/
+.background {
+    background-image: url('../image/IMG_4247.JPG'); /* ใส่ URL ของรูปภาพที่คุณต้องการใช้ */
+    height: 100vh; /* ความสูงของรูปภาพพื้นหลัง */
+    background-position: center; /* ตำแหน่งของรูปภาพ */
+    background-repeat: no-repeat; /* ไม่ทำซ้ำรูปภาพ */
+    background-size: cover; /* ปรับขนาดรูปภาพให้เต็มหน้าจอ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.greeting-text {
+    color: white; /* สีของข้อความ */
+    font-size: 2em; /* ขนาดของข้อความ */
+    padding: 5px; /* ระยะขอบรอบข้อความ */
+}
+
+
+/*ข้อมูลส่วนตัว*/
+#about {
+    display: flex;
+    flex-direction: column; /* ทำให้เนื้อหาภายใน #about จัดวางแนวตั้ง */
+    align-items: center; /* จัดกลางข้อมูลในแนวตั้ง */
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 800px;
+    width: 100%; /* ให้ container มีความกว้างเต็มที่ภายใน #about */
+}
+
+.profile-image {
+    margin-right: 20px;
+}
+
+.profile-info {
+    flex-grow: 1;
+}
+/* Media Queries สำหรับหน้าจอขนาดเล็ก (โทรศัพท์มือถือ) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* จัดวางแนวตั้งบนหน้าจอขนาดเล็ก */
+        align-items: center; /* จัดกลางเนื้อหาใน container */
+    }
+
+    .profile-image {
+        margin-right: 0; /* ไม่ต้องการขอบขวาบนหน้าจอขนาดเล็ก */
+        margin-bottom: 20px; /* เพิ่มระยะห่างด้านล่างรูปภาพ */
+    }
+
+    /* ปรับแต่งเพิ่มเติมหากต้องการ */
+}
+
+
+
+
+/*ส่วนของผลงาน*/
+.portfolio-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* จัดกลางเนื้อหาในแนวนอน */
+    align-items: flex-start; /* จัดให้เนื้อหาอยู่ที่บนสุดของ container */
+    text-align: center;
+    width: 100%;
+
+}
+
+
+.portfolio {
+    width: 400px; /* หรือปรับเป็น % เพื่อความยืดหยุ่นมากขึ้น */
+    height: 420px;
+    perspective: 1000px;
+    margin: 10px; /* ปรับตามความต้องการ */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 8px; 
+}
+
+
+.portfolio-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    
+}
+
+.portfolio:hover .portfolio-inner {
+    transform: scale(1.05); /* ขยายเล็กน้อยเมื่อเมาส์ชี้ */
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3)
+}
+
+.portfolio.is-flipped .portfolio-inner {
+    transform: rotateY(180deg); /* พลิกเมื่อคลิก */
+}
+
+.portfolio-front, .portfolio-back {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.portfolio-front {
+    background: #fff; /* หรือสีตามต้องการ */
+    z-index: 2;
+    transform: rotateY(0deg); /* หน้าด้านหน้า */
+    
+}
+
+.portfolio-back {
+    background: #ffffff; /* หรือสีตามต้องการ */
+    transform: rotateY(180deg); /* หน้าด้านหลัง */
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.portfolio img {
+    width: 90%;
+    height: auto;
+    margin: 0 auto 20px; /* ปรับ margin ให้รูปภาพมีพื้นที่ว่างด้านล่าง */
+    margin-top: 10px;
+    display: block; /* ให้รูปภาพแสดงเป็น block */
+}
+
+
+.portfolio h2, .portfolio p {
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+}
+
+/* Button Styling */
+.portfolio-front button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor changes to pointer on hover */
+    font-size: 16px; /* Adjust font size as needed */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+}
+
+.portfolio-front button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+
+/*โปรเจค*/
+.project-section {
+    display: flex;
+    flex-direction: row; /* แก้ไขเป็น row หากต้องการแสดงแนวนอน */
+    flex-wrap: wrap; /* อนุญาตให้เนื้อหาขึ้นบรรทัดใหม่เมื่อต้องการ */
+    justify-content: center; /* หรือ space-around เพื่อกระจายโปรเจกต์ */
+    align-items: flex-start; /* หรือ adjust ตามต้องการ */
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+
+
+.project {
+    width: 350px;
+    height: 400px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* เพิ่มเงาเบื้องต้นให้กับโปรเจกต์ */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* เพิ่มเงาเมื่อเมาส์ชี้ให้เด่นชัดขึ้น */
+}
+
+
+.project-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    width: 100%;
+}
+.project-section > h2 {
+    width: 100%;
+    text-align: center;
+}
+
+/* .project-inner, .project-front, .project-back {
+    width: 100%;
+    height: 100%;
+   
+} */
+
+.project-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.project-front {
+    background: #fff; /* หรือสีตามต้องการ */
+    z-index: 2;
+    transform: rotateY(0deg); /* หน้าด้านหน้า */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* เพิ่มเงาเมื่อเมาส์ชี้ */
+}
+.project:hover {
+    transform: scale(1.05); /* ขยายขนาดเล็กน้อยเมื่อเมาส์ชี้ */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* เพิ่มเงาเมื่อเมาส์ชี้ */
+}
+.project.is-flipped .project-inner {
+    transform: rotateY(180deg);
+}
+
+.project-front, .project-back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.project-front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+.project-back {
+    transform: rotateY(180deg);
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.project img {
+    width: 90%;
+    height: auto;
+    margin: 10px auto; /* จัดรูปภาพให้อยู่ตรงกลางและมีพื้นที่ว่างด้านบน */
+    display: block;
+}
+
+.project h2, .project p {
+    text-align: center;
+}
+
+.project button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor changes to pointer on hover */
+    font-size: 16px; /* Adjust font size as needed */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+}
+
+.project button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+
+/* กิจกรรม */
+
+
+.activity {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.activity-item {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    height: auto; /* Changed to auto for flexible height */
+    background-color: #ffffff;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.activity-image {
+    width: 250px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.activity-content {
+    flex: 1;
+}
+
+.activity-content h2, .activity-content p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Add this media query for mobile devices */
+@media (max-width: 768px) {
+    .activity-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .activity-image {
+        width: 80%; /* Adjust the width as needed for mobile */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Add some space below the image */
+    }
+
+    .activity-content {
+        text-align: center; /* Center the text for mobile */
+    }
+}
+
+/* ติดต่อ */
+#contact {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-info p, .contact-info a {
+    color: #333;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #007bff;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+
+
+
