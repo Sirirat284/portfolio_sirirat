@@ -361,6 +361,70 @@ body {
     text-decoration: underline;
 }
 
+/* cer */
+#certificates-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #ffffff; /* Set background color to white */
+}
+
+#certificates-section h2 {
+    margin-bottom: 30px; /* Space between the title and the certificates */
+    color: #333; /* Adjust color as needed */
+}
+
+.certificate-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.certificate {
+    width: 300px; /* Adjust size as needed */
+    height: 420px; /* Adjust height as needed */
+    margin: 10px;
+    perspective: 1000px;
+    background-color: #ffffff; /* Set individual certificate background to white */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: Adds shadow for depth */
+    border-radius: 10px; /* Optional: Rounds the corners */
+}
+
+.certificate-inner {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+}
+
+.certificate-front, .certificate-back {
+    backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px; /* Match parent border radius */
+}
+
+.certificate-front {
+    background: #fff; /* Ensure the front background is white */
+}
+
+.certificate-back {
+    background: #fff; /* Ensure the back background is white */
+    transform: rotateY(180deg);
+}
+
+.certificate:hover .certificate-inner {
+    transform: rotateY(180deg);
+}
+
+
+
+
+
 
 
 
