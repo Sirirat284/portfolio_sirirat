@@ -422,6 +422,56 @@ body {
 }
 
 
+.skills {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .skill {
+    margin-bottom: 15px;
+  }
+  
+  .skill-name {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  /* ปรับปรุง CSS สำหรับ Skill Bar */
+.skill-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 20px; /* กำหนดความสูงของ Skill Bar */
+  }
+  
+  .skill-per {
+    font-size: 14px; /* ปรับขนาดตัวอักษรใน Skill Bar */
+    height: 100%; /* ให้ Skill Bar เต็มความสูง */
+    line-height: 20px; /* กำหนดความสูงของบรรทัดให้เท่ากับความสูงของ Skill Bar */
+    color: white; /* สีตัวอักษร */
+    text-align: right; /* ตัวอักษรชิดขวา */
+    padding-right: 5px; /* ระยะห่างของตัวอักษรจากขวา */
+    box-sizing: border-box; /* ให้ padding อยู่ภายในขนาดที่กำหนด */
+  }
+  
+  
+  .skill-per::after {
+    content: attr(per);
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 600px) {
+    .skill-name {
+      font-size: 18px;
+    }
+  
+    .skill-per {
+      height: 18px;
+      line-height: 18px;
+    }
+  }
 
 
 
