@@ -474,6 +474,73 @@ body {
   }
 
 
+.internship-experience {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+
+.experience-detail {
+    display: flex;
+    flex-direction: column; /* ปรับให้เนื้อหาภายในจัดเรียงแนวตั้ง */
+    align-items: center; /* จัดให้เนื้อหาอยู่ตรงกลางแนวนอน */
+    text-align: center; /* ให้ข้อความอยู่ตรงกลาง */
+    gap: 20px;
+}
+
+.experience-image {
+    max-width: 300px; /* หรือ % ตามที่คุณต้องการ */
+    height: auto; /* ให้สัดส่วนของรูปภาพถูกต้อง */
+    /* margin-bottom ถูกลบออก เนื่องจากใช้ gap ใน .experience-detail แทน */
+}
+
+.experience-description h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.experience-description p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+.experience-description, .experience-description ul {
+    text-align: left; /* ให้รายละเอียดการฝึกงานอยู่ทางซ้าย */
+    margin: 0 auto; /* กลางกับ container */
+    max-width: 80%; /* ปรับความกว้างของข้อความให้เหมาะสม */
+}
+
+.experience-description li {
+    text-align: left; /* ให้ข้อความในรายการอยู่ทางซ้าย */
+}
+.certification-button {
+    text-align: center; /* จัดให้ปุ่มอยู่ตรงกลาง */
+    margin-top: 20px; /* ให้ระยะห่างจากข้อความด้านบน */
+}
+
+.btn {
+    background-color: #0056b3; /* สีของปุ่ม */
+    color: white; /* สีข้อความของปุ่ม */
+    padding: 10px 20px; /* ระยะห่างภายในปุ่ม */
+    border: none; /* ไม่มีเส้นขอบ */
+    border-radius: 5px; /* ขอบมน */
+    text-decoration: none; /* ลบเส้นใต้ข้อความ */
+    font-size: 16px; /* ขนาดข้อความในปุ่ม */
+    cursor: pointer; /* เม้าส์เปลี่ยนเป็นมือเมื่อชี้ */
+    transition: background-color 0.3s; /* ให้มีการเปลี่ยนแปลงสีเมื่อ hover */
+}
+
+.btn:hover {
+    background-color: #004494; /* สีของปุ่มเมื่อ hover */
+}
 
 
 
