@@ -583,7 +583,15 @@
           });
         });
         document.addEventListener('DOMContentLoaded', () => {
-            const observer = new IntersectionObserver((entries, observer) => {
+            if (window.innerWidth <= 768) {
+                // สำหรับหน้าจอขนาดเล็ก ตั้งค่าให้ elements แสดงโดยไม่ต้องผ่าน Animation
+                document.querySelectorAll('.profile-info p').forEach(item => {
+                    item.style.opacity = 1; // ทำให้ข้อความโปร่งใส
+                    item.style.transform = 'translateX(0)'; // ตั้งค่าตำแหน่งของ elements
+                });
+            }
+            else {
+                const observer = new IntersectionObserver((entries, observer) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
                         entry.target.style.opacity = 1;
@@ -597,6 +605,7 @@
             document.querySelectorAll('.profile-info p').forEach((p) => {
                 observer.observe(p);
             });
+            }
         });
         document.addEventListener('DOMContentLoaded', () => {
             const observer = new IntersectionObserver((entries) => {
