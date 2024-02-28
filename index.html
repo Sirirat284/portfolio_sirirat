@@ -45,19 +45,19 @@
                 <img src="image/IMG_5865.JPG" alt="Your Name" style="width: 200px; height: auto; border-radius: 10px;">
             </div>
             <div class="profile-info" style="flex-grow: 1;">
-                <p><strong >Name:</strong> Mr.Sirirat Sanghkao <strong>Nickname:</strong> Dodo</p>
-                <p><strong>Age:</strong> <span id="age">Calculating...</span><strong> years old</strong></p>
+                <p class="animate-text" style="animation-delay: 0.05s;"><strong >Name:</strong> Mr.Sirirat Sanghkao <strong>Nickname:</strong> Dodo</p>
+                <p class="animate-text" style="animation-delay: 0.08s;"><strong>Age:</strong> <span id="age">Calculating...</span><strong> years old</strong></p>
                 <script src="cal_age.js"></script>
-                <p><strong>Education:</strong> Bachelor's Degree</p>
-                <p><strong>Faculty:</strong> Faculty of Science <strong>Major:</strong> Computer Science</p>
-                <p><strong>King Mongkut's Institute of Technology Ladkrabang</strong> </p>
-                <p><strong>GPA :</strong> 3.05 </p>
-                <p><strong>Skills </strong> 
+                <p class="animate-text" style="animation-delay: 0.11s;"><strong>Education:</strong> Bachelor's Degree</p>
+                <p class="animate-text" style="animation-delay: 0.14s;"><strong>Faculty:</strong> Faculty of Science <strong>Major:</strong> Computer Science</p>
+                <p class="animate-text" style="animation-delay: 0.17s;"><strong>King Mongkut's Institute of Technology Ladkrabang</strong> </p>
+                <p class="animate-text" style="animation-delay: 0.20s;"><strong>GPA :</strong> 3.05 </p>
+                <p class="animate-text" style="animation-delay: 0.23s;"><strong>Skills </strong> 
                     <br/>&emsp;&emsp;<strong>Programming Language :</strong> Python, JAVA,  Node JS, Next JS, HTML&CSS&JavaScript, PHP, SQL
                     <br/>&emsp;&emsp;<strong>Other Skills : </strong> Machine Learning&Deep Learning, Analysis Data, Able to analyze and design ER Diagrams, Use Case Diagrams, Activity Diagrams, and Sequence Diagrams.
                 </p>
-                <p><strong>Tools :</strong> Pandas, Numpy, Scikitlearn, TensorFlow, Karas, Matpotlib, Seaborn, GITHUB, DialogFlow, MongoDB, TailwindCSS </p>
-                <p><strong>Programs :</strong> Tableau, SAS VIYA, Looker Studio, VS Code, Microsoft (Word, Excel, PowerPoint), Adobe(Photo shop, Lightroom, Premiere pro), Canva, figma </p>
+                <p class="animate-text" style="animation-delay: 0.26s;"><strong>Tools :</strong> Pandas, Numpy, Scikitlearn, TensorFlow, Karas, Matpotlib, Seaborn, GITHUB, DialogFlow, MongoDB, TailwindCSS </p>
+                <p class="animate-text" style="animation-delay: 0.29s;"><strong>Programs :</strong> Tableau, SAS VIYA, Looker Studio, VS Code, Microsoft (Word, Excel, PowerPoint), Adobe(Photo shop, Lightroom, Premiere pro), Canva, figma </p>
                 <!-- <div class="skill">
                     <div class="skill-name">Thai Language</div>
                     <p><strong>Thai Language</strong></p>
@@ -327,7 +327,7 @@
         <div class="portfolio" onclick="this.classList.toggle('is-flipped')">
             <div class="portfolio-inner">
                 <div class="portfolio-front">
-                    <img src="image/Funwithdata.png" alt="Certificate">
+                    <img src="image/fun_with_data.png" alt="Certificate">
                     <h2>Fun With Data Science</h2>
                     <button>Details</button>
                 </div>
@@ -361,6 +361,69 @@
     <footer>
         <p>&copy; 2023 Sirirat Sanghkao. All rights reserved.</p>
     </footer>
-    
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+          const greetingText = document.querySelector('.greeting-text');
+          const windowHeight = window.innerHeight;
+        
+          window.addEventListener('scroll', () => {
+            const elementTop = greetingText.getBoundingClientRect().top;
+            
+            if (elementTop < windowHeight - 100) { // Adjust 100 based on when you want the animation to start
+              greetingText.style.visibility = 'visible';
+              greetingText.style.animation = 'slideInFromLeft 1s ease-out';
+            }
+          });
+        });
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateX(0)';
+                        entry.target.style.animation = 'slideInFromRight 1s forwards';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {threshold: 0.1});
+
+            document.querySelectorAll('.profile-info p').forEach((p) => {
+                observer.observe(p);
+            });
+        });
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        // เพิ่ม animation และเริ่มเล่นเมื่อปรากฏใน viewport
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateX(0)';
+                        entry.target.style.animation = 'slideInFromRight 0.5s ease-out forwards';
+                        observer.unobserve(entry.target); // หยุดสังเกตหลังจากเริ่ม animation
+                    }
+                });
+            }, {threshold: 0.1});
+
+            document.querySelectorAll('.activity-item').forEach(item => {
+                observer.observe(item);
+            });
+        });
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible'); // เพิ่ม class 'visible' เพื่อเริ่ม animation
+                        observer.unobserve(entry.target); // หยุดสังเกตหลังจากเริ่ม animation
+                    }
+                });
+            }, {threshold: [0.5]}); // การปรากฏของอย่างน้อย 50% ขององค์ประกอบใน viewport
+
+            document.querySelectorAll('.internship-experience').forEach(item => {
+                observer.observe(item);
+            });
+        });
+
+        </script>
+        
 </body>
 </html>

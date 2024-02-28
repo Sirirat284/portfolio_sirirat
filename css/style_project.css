@@ -9,7 +9,7 @@ body {
 
 
 header {
-    background: #0056b3; /* ปรับเป็นสีที่มีความเป็นทางการมากขึ้น */
+    background: #293556; /* ปรับเป็นสีที่มีความเป็นทางการมากขึ้น */
     color: #ffffff;
     padding-top: 20px;
     min-height: 80px; /* ปรับขนาดสูงเพิ่มเล็กน้อย */
@@ -139,7 +139,7 @@ header  {
 
 
 footer {
-    background: #0056b3; /* ปรับให้สอดคล้องกับ header */
+    background: #293556; /* ปรับให้สอดคล้องกับ header */
     color: #ffffff;
     text-align: center;
     padding: 25px;
