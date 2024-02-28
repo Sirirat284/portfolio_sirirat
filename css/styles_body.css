@@ -114,6 +114,111 @@ body {
     opacity: 0; /* เริ่มต้นให้ข้อความโปร่งใส */
     transform: translateX(100%); 
 }
+.skills-container {
+    background-color: white; /* เปลี่ยนพื้นหลังเป็นสีขาว */
+    padding: 20px; /* เพิ่ม padding เล็กน้อยรอบๆ สำหรับ aesthetics */
+    margin: 20px auto; /* เพิ่ม margin ด้านบนและล่าง */
+    max-width: 1200px; /* จำกัดความกว้างของ container */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* เพิ่มเงาเล็กน้อยสำหรับ depth */
+    border-radius: 8px; /* เพิ่มขอบมน */
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Allows items to wrap */
+    padding: 20px; /* Padding around the entire grid */
+    gap: 20px; /* Adjust this value to control the space between items */
+}
+
+.skill-item {
+    flex-basis: calc(20% - 40px); /* Adjust this value to control the width of each item */
+    text-align: center;
+    margin: 10px; /* Adjust this value to control the space between rows */
+}
+
+.skill-item {
+    /* Initial animation setup */
+    animation: fadeIn 1s ease-out forwards;
+    animation-play-state: paused; /* Animation is paused by default */
+}
+.skill-item img {
+    width: 90px; /* หรือขนาดที่คุณต้องการ */
+    height: 90px; /* หรือขนาดที่คุณต้องการ */
+    object-fit: contain; /* หรือ 'cover' ถ้าคุณต้องการให้รูปภาพครอบคลุมพื้นที่ทั้งหมด */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    .skills-grid {
+        justify-content: center; /* จัดให้ items อยู่กลาง */
+    }
+
+    .skill-item {
+        width: 100%; /* ให้แต่ละ item ครอบคลุมทั้งความกว้างของ container */
+        margin: 10px 0; /* ปรับระยะห่างระหว่าง items ในหน้าจอขนาดเล็ก */
+    }
+
+    .skill-item img {
+        width: 60px; /* ลดขนาดภาพสำหรับหน้าจอเล็ก */
+    }
+}
+.other-skills-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.other-skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.other-skill-item {
+    flex-basis: calc(25% - 40px);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.other-skill-item img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.other-skill-item h3 {
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+@media (max-width: 768px) {
+    .other-skill-item {
+        flex-basis: 100%;
+    }
+
+    .other-skill-item img {
+        width: 80px;
+    }
+
+    .other-skill-item h3 {
+        font-size: 12px;
+    }
+}
+
+
 
 
 
@@ -494,59 +599,6 @@ body {
 .certificate:hover .certificate-inner {
     transform: rotateY(180deg);
 }
-
-
-.skills {
-    padding: 20px;
-    max-width: 600px;
-    margin: auto;
-  }
-  
-  .skill {
-    margin-bottom: 15px;
-  }
-  
-  .skill-name {
-    font-size: 20px;
-    margin-bottom: 5px;
-  }
-  
-  /* ปรับปรุง CSS สำหรับ Skill Bar */
-.skill-bar {
-    width: 100%;
-    background-color: #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-    height: 20px; /* กำหนดความสูงของ Skill Bar */
-  }
-  
-  .skill-per {
-    font-size: 14px; /* ปรับขนาดตัวอักษรใน Skill Bar */
-    height: 100%; /* ให้ Skill Bar เต็มความสูง */
-    line-height: 20px; /* กำหนดความสูงของบรรทัดให้เท่ากับความสูงของ Skill Bar */
-    color: white; /* สีตัวอักษร */
-    text-align: right; /* ตัวอักษรชิดขวา */
-    padding-right: 5px; /* ระยะห่างของตัวอักษรจากขวา */
-    box-sizing: border-box; /* ให้ padding อยู่ภายในขนาดที่กำหนด */
-  }
-  
-  
-  .skill-per::after {
-    content: attr(per);
-  }
-  
-  /* Responsive */
-  @media screen and (max-width: 600px) {
-    .skill-name {
-      font-size: 18px;
-    }
-  
-    .skill-per {
-      height: 18px;
-      line-height: 18px;
-    }
-  }
-
 
 .internship-experience {
     font-family: Arial, sans-serif;

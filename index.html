@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/styles_body.css"> <!-- ลิงก์ไปยังไฟล์ CSS -->
     <link rel="stylesheet" href="css/style_foot.css"> 
     <link rel="stylesheet" href="css/styles_head.css"> 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         html {
             scroll-behavior: smooth;
@@ -52,12 +53,12 @@
                 <p class="animate-text" style="animation-delay: 0.14s;"><strong>Faculty:</strong> Faculty of Science <strong>Major:</strong> Computer Science</p>
                 <p class="animate-text" style="animation-delay: 0.17s;"><strong>King Mongkut's Institute of Technology Ladkrabang</strong> </p>
                 <p class="animate-text" style="animation-delay: 0.20s;"><strong>GPA :</strong> 3.05 </p>
-                <p class="animate-text" style="animation-delay: 0.23s;"><strong>Skills </strong> 
+                <!-- <p class="animate-text" style="animation-delay: 0.23s;"><strong>Skills </strong> 
                     <br/>&emsp;&emsp;<strong>Programming Language :</strong> Python, JAVA,  Node JS, Next JS, HTML&CSS&JavaScript, PHP, SQL
                     <br/>&emsp;&emsp;<strong>Other Skills : </strong> Machine Learning&Deep Learning, Analysis Data, Able to analyze and design ER Diagrams, Use Case Diagrams, Activity Diagrams, and Sequence Diagrams.
                 </p>
                 <p class="animate-text" style="animation-delay: 0.26s;"><strong>Tools :</strong> Pandas, Numpy, Scikitlearn, TensorFlow, Karas, Matpotlib, Seaborn, GITHUB, DialogFlow, MongoDB, TailwindCSS </p>
-                <p class="animate-text" style="animation-delay: 0.29s;"><strong>Programs :</strong> Tableau, SAS VIYA, Looker Studio, VS Code, Microsoft (Word, Excel, PowerPoint), Adobe(Photo shop, Lightroom, Premiere pro), Canva, figma </p>
+                <p class="animate-text" style="animation-delay: 0.29s;"><strong>Programs :</strong> Tableau, SAS VIYA, Looker Studio, VS Code, Microsoft (Word, Excel, PowerPoint), Adobe(Photo shop, Lightroom, Premiere pro), Canva, figma </p> -->
                 <!-- <div class="skill">
                     <div class="skill-name">Thai Language</div>
                     <p><strong>Thai Language</strong></p>
@@ -70,9 +71,215 @@
             </div>
         </div>
     </section>
+    <div class="skills-container">
+        <h2 style="text-align: center; color: #0056b3;">My Skills</h2>
+        <h2 style="text-align: center;color: #ee7700;">Programming Language</h2>
+        <div class="skills-grid">
+            <div class="skill-item" data-skill="python">
+                <img src="image/icons8-python-96.png" alt="python">
+                <h3>python</h3>
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+            </div>
+            <div class="skill-item" data-skill="python">
+                <img src="image/icons8-java-96.png" alt="python">
+                <h3>JAVA</h3>
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+            </div>
+            <div class="skill-item" data-skill="python">
+                <img src="image/icons8-nodejs-96.png" alt="python">
+                <h3>Node JS</h3>
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+            </div>
+            <div class="skill-item" data-skill="python">
+                <img src="image/icons8-nextjs-64.png" alt="python">
+                <h3>Next JS</h3>
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+            </div>
+            <div class="skill-item" data-skill="python">
+                <img src="image/icons8-html-96.png" alt="python">
+                <h3>HTML</h3>
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+            </div>
+            <div class="skill-item" data-skill="python">
+                <img src="image/icons8-css-96.png" alt="python">
+                <h3>CSS</h3>
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+            </div>
+            <div class="skill-item" data-skill="python">
+                <img src="image/icons8-javascript-96.png" alt="python">
+                <h3>Java Script</h3>
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+            </div>
+            <div class="skill-item" data-skill="python">
+                <img src="image/icons8-php-80.png" alt="python">
+                <h3>PHP</h3>
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+            </div>
+            <div class="skill-item" data-skill="python">
+                <img src="image/icons8-my-sql-96.png" alt="python">
+                <h3>SQL</h3>
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+            </div>
+            <!-- ซ้ำๆ สำหรับ CSS 3, JavaScript, Python, Sass, MySQL -->
+        </div>
+        <h2 style="text-align: center;color: #ee7700;">Other Skills</h2>
+        <div class="other-skills-grid">
+            <div class="other-skill-item" data-skill="python">
+                <img src="image/icons8-ai-100.png" alt="python">
+                <h3>Machine Learning & Deep Learning</h3>
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+            </div>
+            <div class="other-skill-item" data-skill="python">
+                <img src="image/icons8-analysis-100.png" alt="python">
+                <h3>Analysis Data</h3>
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+            </div>
+            <div class="other-skill-item" data-skill="python">
+                <img src="image/icons8-diagram-100.png" alt="python">
+                <h3>Able to analyze and design ER Diagrams</h3>
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+            </div>
+            <div class="other-skill-item" data-skill="python">
+                <img src="image/icons8-flow-100.png" alt="python">
+                <h3>Able to analyze and design Use Case Diagrams,
+                    Activity Diagrams, and Sequence Diagrams</h3>
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+            </div>
+        </div>
+    </div>
     
+
+    <div class="skills-container">
+        <h2 style="text-align: center; color: #0056b3;">Tools</h2>
+        <div class="skills-grid">
+            <div class="skill-item" data-skill="python">
+                <img src="image/icons8-pandas-96.png" alt="python">
+                <h3>Pandas</h3>
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+            </div>
+            <div class="skill-item" data-skill="python">
+                <img src="image/icons8-numpy-96.png" alt="python">
+                <h3>Numpy</h3>
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+            </div>
+            <div class="skill-item" data-skill="python">
+                <img src="image/scikitlearn.png"  alt="Scikitlearn">
+                <h3>Scikitlearn</h3>
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+            </div>            
+            <div class="skill-item" data-skill="python">
+                <img src="image/Tensorflow.png" alt="python">
+                <h3>TensorFlow</h3>
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+            </div>
+            <div class="skill-item" data-skill="python">
+                <img src="image/keras.png"  alt="python">
+                <h3>Keras</h3>
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+            </div>
+            <div class="skill-item" data-skill="python">
+                <img src="image/matplotlib.png" alt="python">
+                <h3>Matpotlib</h3>
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+            </div>
+            <div class="skill-item" data-skill="python">
+                <img src="image/seaborn.png" alt="python">
+                <h3>Seaborn</h3>
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+            </div>
+            <div class="skill-item" data-skill="python">
+                <img src="image/icons8-github-100.png" alt="python">
+                <h3>GITHUB</h3>
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+            </div>
+            <div class="skill-item" data-skill="python">
+                <img src="image/Dialogflow.png" alt="python">
+                <h3>DialogFlow</h3>
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+            </div>
+            <div class="skill-item" data-skill="python">
+                <img src="image/icons8-mongodb-a-cross-platform-document-oriented-database-program-96.png" alt="python">
+                <h3>MongoDB</h3>
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+            </div>
+            <div class="skill-item" data-skill="python">
+                <img src="image/icons8-tailwindcss-96.png" alt="python">
+                <h3>TailwindCSS</h3>
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+            </div>
+            <div class="skill-item" data-skill="python">
+                <img src="image/streamlit.png" alt="python">
+                <h3>streamlit</h3>
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+            </div>
+        </div>
+    </div>
     
-    
+    <div class="skills-container">
+        <h2 style="text-align: center; color: #0056b3;">Programs</h2>
+        <div class="skills-grid">
+            <div class="skill-item" data-skill="python">
+                <img src="image/icons8-tableau-software-96.png" alt="python">
+                <h3>Tableau</h3>
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+            </div>
+            <div class="skill-item" data-skill="python">
+                <img src="image/sas-viya-logo-cloud-08.png" alt="python">
+                <h3>SAS VIYA</h3>
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+            </div>
+            <div class="skill-item" data-skill="python">
+                <img src="image/looker.png" alt="python">
+                <h3>Looker Studio</h3>
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+            </div>
+            <div class="skill-item" data-skill="python">
+                <img src="image/icons8-vs-code-96.png" alt="python">
+                <h3>VS Code</h3>
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+            </div>
+            <div class="skill-item" data-skill="python">
+                <img src="image/icons8-figma-96.png" alt="python">
+                <h3>figma</h3>
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+            </div>
+            <div class="skill-item" data-skill="python">
+                <img src="image/icons8-microsoft-word-96.png" alt="python">
+                <h3>Microsoft Word</h3>
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+            </div>
+            <div class="skill-item" data-skill="python">
+                <img src="image/icons8-microsoft-excel-96.png" alt="python">
+                <h3>Microsoft Excel</h3>
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+            </div>
+            <div class="skill-item" data-skill="python">
+                <img src="image/icons8-microsoft-powerpoint-96.png" alt="python">
+                <h3>Microsoft PowerPoint</h3>
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+            </div>
+            <div class="skill-item" data-skill="python">
+                <img src="image/photoshop.png" alt="python">
+                <h3>Adobe Photo shop</h3>
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+            </div>
+            <div class="skill-item" data-skill="python">
+                <img src="image/LR.png" alt="python">
+                <h3>Adobe Lightroom</h3>
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+            </div>
+            <div class="skill-item" data-skill="python">
+                <img src="image/pr.png" alt="python">
+                <h3>Adobe Premiere pro</h3>
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+            </div>
+            <div class="skill-item" data-skill="python">
+                <img src="image/icons8-canva-96.png" alt="python">
+                <h3>Canva</h3>
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+            </div>
+        </div>
+    </div>
     
     <br>
     <h2 id="portfolio" style="text-align: center; color: #0056b3;">Competition Results</h2>
@@ -85,7 +292,7 @@
                     <button>Details</button>
                 </div>
                 <div class="portfolio-back"  >
-                    <h2>Competition Details</h2>
+                    <h2>SAS X KMITL Hackathon 3nd</h2>
                     <p><strong>Award : </strong> Gold Medal, Second Runner-up</p>
                     <p>This competition involves data analysis and the development of Machine Learning models to predict the likelihood of customers making donations when contacted. With a dataset of 1 million historical records prepared by SAS, participants are tasked with determining if a client will contribute financially upon being approached. The SAS VIYA program is provided for use in this competition
                     </p>
@@ -100,7 +307,7 @@
                     <button>Details</button>
                 </div>
                 <div class="portfolio-back"  >
-                    <h2>Competition Details</h2>
+                    <h2>SAS X KMITL Hackathon 2nd</h2>
                     <p><strong>Award : </strong> Goal Medal</p>
                     <p>This competition involves data analysis and the development of Machine Learning models to predict the likelihood of customers making donations when contacted. With a dataset of 1 million historical records prepared by SAS, participants are tasked with determining if a client will contribute financially upon being approached. The SAS VIYA program is provided for use in this competition
                     </p>
@@ -115,7 +322,7 @@
                     <button>Details</button>
                 </div>
                 <div class="portfolio-back" >
-                    <h2>Competition Details</h2>
+                    <h2>ASEAN Data Science Explorers</h2>
                     <p><strong>Award : </strong> Participation</p>
                     <p>The competition involves analyzing problems occurring within ASEAN, referencing the Sustainable Development Goals (SDGs). This competition aims to identify key information about the issues and present solutions to the committee for addressing these problems.
                     </p>
@@ -130,7 +337,7 @@
                     <button>Details</button>
                 </div>
                 <div class="portfolio-back">
-                    <h2>Competition Details</h2>
+                    <h2>Code Arcade 2021 Booster</h2>
                     <p><strong>Award : </strong> Bronze Medal</p>
                     <p>The competition involves Java programming to solve specific problems, primarily organized for Computer Science students in their 1st to 4th year who are interested and wish to demonstrate their skills. They are encouraged to participate in the competition.
                     </p>
@@ -422,6 +629,22 @@
                 observer.observe(item);
             });
         });
+        document.addEventListener('DOMContentLoaded', () => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.skill-item').forEach(item => {
+                observer.observe(item);
+            });
+        });
+        
+
 
         </script>
         
