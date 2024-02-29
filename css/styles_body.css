@@ -5,7 +5,28 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #DDE6ED;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* ป้องกันไม่ให้มีการเลื่อนแนวนอน */
 }
+
+@media (max-width: 768px) {
+    body, html {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; 
+    }
+
+    /* ปรับแต่ง elements ใดๆ ที่อาจทำให้เกิดช่องว่าง */
+    .container, .row, .section {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+}
+
 
 /*ส่วนของ welcome*/
 .background {
