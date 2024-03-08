@@ -190,3 +190,24 @@ footer {
     padding: 25px;
     margin-top: 30px; /* ปรับระยะห่างจากเนื้อหาส่วนบน */
 }
+
+.work-details {
+    margin-left: 20px; /* เพิ่มระยะห่างด้านซ้าย */
+    color: #333; /* สีของข้อความ */
+    font-family: Arial, sans-serif; /* ฟอนต์ */
+}
+
+.work-details strong {
+    color: #ee7700; /* สีของหัวข้อย่อย */
+    font-size: 1.2em; /* ขนาดของหัวข้อย่อย */
+}
+
+.work-details li {
+    margin-bottom: 10px; /* ระยะห่างระหว่างแต่ละรายการ */
+}
+
+/* ปรับแต่งสำหรับ ul */
+.work-details ol {
+    list-style-type: decimal; /* ประเภทของตัวเลข */
+    margin-left: 40px; /* ระยะห่างสำหรับตัวเลข */
+}
