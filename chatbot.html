@@ -13,13 +13,15 @@
             <h4 style="display: inline; color: white;">Mr. Sirirat Sanghkao</h4>
         </div>
         <nav style="display: flex; margin-right: 150px;">
-            <a href="index.html#home" style="color: white; margin-right: 10px; text-decoration: none;">Home</a>
-            <a href="index.html#about" style="color: white; margin-right: 10px; text-decoration: none;">Profile</a>
-            <a href="index.html#portfolio" style="color: white; text-decoration: none;  margin-right: 10px;">Competitions</a>
-            <a href="index.html#projects" style="color: white; text-decoration: none;  margin-right: 10px;">Projects</a>
-            <a href="index.html#activity" style="color: white; text-decoration: none; margin-right: 10px;">Activities</a>
-            <a href="index.html#internship" style="color: white; text-decoration: none; margin-right: 10px;">Internship</a>
-            <a href="index.html#contact" style="color: white; text-decoration: none; margin-right: 10px;">Contact</a>
+            <a href="index.html#home" style="color: white; margin-right: 10px; text-decoration: none;" data-en="Home" data-th="หน้าหลัก"></a>
+            <a href="index.html#about" style="color: white; margin-right: 10px; text-decoration: none;" data-en="Profile" data-th="ข้อมูลส่วนตัว"></a>
+            <a href="index.html#portfolio" style="color: white; text-decoration: none; margin-right: 10px;" data-en="Competitions" data-th="ผลงานการแข่งขัน"></a>
+            <a href="index.html#projects" style="color: white; text-decoration: none; margin-right: 10px;" data-en="Projects" data-th="ผลงานโปรเจค"></a>
+            <a href="index.html#activity" style="color: white; text-decoration: none; margin-right: 10px;" data-en="Activities" data-th="กิจกรรม"></a>
+            <a href="index.html#internship" style="color: white; text-decoration: none; margin-right: 10px;" data-en="Internship" data-th="การฝึกงาน"></a>
+            <a href="index.html#contact" style="color: white; text-decoration: none; margin-right: 10px;" data-en="Contact" data-th="ติดต่อ"></a>
+            <!-- เพิ่มปุ่ม Language ที่นี่ -->
+            <button id="languageButton" style="margin-left: 20px; background-color: #ff9d1d; color: white; border: none; cursor: pointer; padding: 10px 20px; border-radius: 20px; font-size:90%;">TH</button>
         </nav>
     </header> 
     <!-- <header>
@@ -27,7 +29,7 @@
     </header> -->
 
     <section class="project-details">
-        <h2>Career Path Interest-Based Course Recommendation Chatbot</h2>
+        <h2 data-en="Career Path Interest-Based Course Recommendation Chatbot" data-th="แชทบอทสำหรับแนะนำวิชาเรียนตามสายงานที่สนใจ"></h2>
         <div class="slider">
             <div class="slides" style="justify-content: center;">
                 <div class="slide"><img src="image/chatbot2.PNG" alt="Image 1"></div>
@@ -44,44 +46,47 @@
                 <!-- เพิ่ม span สำหรับแต่ละรูปภาพ -->
             </div>
         </div>
-        <h2>Project Name</h2>
-        <p>Career Path Interest-Based Course Recommendation Chatbot</p>
-        <h2>Project Details</h2>
-        <p>
-            Created a Chatbot to provide details on courses required for various career paths, ideal for students interested in a particular field but unsure of the relevant courses in their major. The Chatbot also informs on course availability, whether in the morning or afternoon, enhancing the convenience of course registration. This Chatbot operates exclusively through the LINE application.
+        <h2 data-en="Project Name" data-th="ชื่อโปรเจค"></h2>
+        <p data-en="Career Path Interest-Based Course Recommendation Chatbot" data-th="แชทบอทสำหรับแนะนำวิชาเรียนตามสายงานที่สนใจ"></p>
+        <h2 data-en="Project Details" data-th="รายละเอียดโปรเจค"></h2>
+        <p  data-en="Created a Chatbot to provide details on courses required for various career paths, ideal for students interested in a particular field but unsure of the relevant courses in their major. The Chatbot also informs on course availability, whether in the morning or afternoon, enhancing the convenience of course registration. This Chatbot operates exclusively through the LINE application."
+            data-th="พัฒนแชทบอทเพื่อแสดงรายละเอียดวิชาที่จำเป็นในสายอาชีพต่าง ๆ เหมาะกับนักเรียนนักศึกษาที่สนใจในสายอาชีพนั้นๆแต่ไม่ทราบว่าควรเรียนวิชาไหน โดยแชทบอทนี้จะแสดงวิชาที่ควรเรียนตามสาย และสามารถระบุได้ว่าต้องการเรียนเป็นภาคเช้า หรือ ภาคบ่าย โดยออกแบบมาเพื่อเป็นตัวช่วยเพิ่มความสะดวกในการลงทะเบียนเรียน โดยแชทบอทตัวนี้จะทำงานผ่านไลน์เท่านั้น">   
         </p>
-        <h2>Roles and Project Work Details</h2>
-        <p class="work-details"><strong style="color: #ee7700;">Role : </strong>  Backend Developer , Team Leader</p>
+        <h2 data-en="Roles and Project Work Details" data-th="ตำแหน่งและรายละเอียดการทำงาน"></h2>
+        <p class="work-details"><strong style="color: #ee7700;" data-en="Role : " data-th="ตำแหน่ง : "></strong>  Backend Developer , Team Leader</p>
         <p class="work-details">
-            <strong style="color: #ee7700;">Work Details:</strong>
+            <strong style="color: #ee7700;" data-en="Work Details: " data-th="รายละเอียดการทำงาน"></strong>
             <ol>
-                <li>Connected APIs between Line chatbot and Dialogflow and integrated APIs from Dialogflow with the backend server.</li>
-                <li>Defined keywords from questions received from Dialogflow to trigger functions on the backend server.</li>
-                <li>Developed backend functions to generate responses based on the identified keywords.</li>
+                <li data-en="Connected APIs between Line chatbot and Dialogflow and integrated APIs from Dialogflow with the backend server."
+                    data-th="เชื่อมต่อ API ระหว่าง Chatbot กับ Dialogflow และ เชื่อมต่อระหว่าง Dialogflow กับ backend server"></li>
+                <li data-en="Defined keywords from questions received from Dialogflow to trigger functions on the backend server."
+                    data-th="กำหนดคีย์เวิร์ดคำถามที่ได้จาก Dialogflow เพื่อเรียกฟังก์ชั่นใน Backend server"></li>
+                <li data-en="Developed backend functions to generate responses based on the identified keywords."
+                    data-th="พัฒนาฟังก์ชั่นที่เพื่อสร้างคำตอบเพื่อการตอบกลับคำถาม"></li>
             </ol>
         </p>
 
-        <h2>Tools</h2>
+        <h2 data-en="Tools" data-th="เครื่องมือที่ใช้"></h2>
         <ul>
             <li>Flask</li>
             <li>DialogFlow</li>
             <!-- เพิ่มเทคโนโลยีอื่นๆ ที่ใช้ -->
         </ul>
-        <h2>Programming Languages</h2>
+        <h2 data-en="Programming Languages" data-th="ภาษาโปรแกรมที่ใช้ในการพัฒนาโปรเจค"></h2>
         <ul>
             <li>Python </li>
             <li>SQL</li>
             <!-- เพิ่มเทคโนโลยีอื่นๆ ที่ใช้ -->
         </ul>
-        <h2>Programs</h2>
+        <h2 data-en="Programs" data-th="โปรแกรมที่ใช้ใรการพัฒนาโปรเจค"></h2>
         <ul>
             <li>VS CODE </li>
             <li>DBeaver</li>
             <!-- เพิ่มเทคโนโลยีอื่นๆ ที่ใช้ -->
         </ul>
 
-        <h2>Demo Link</h2>
-        <a href="https://www.youtube.com/watch?v=XXUDpKuLOA4" target="_blank">Youtube</a>
+        <h2 data-en="Demo" data-th="ตัวอย่างการทำงาน"></h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XXUDpKuLOA4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         <h2>Source Code</h2>
         <a href="https://github.com/wanglingx/python-api-chatbotAI-2565-1" target="_blank"> GitHub Repository</a>
@@ -120,6 +125,28 @@
         slides[slideIndex-1].style.display = "block";
         dots[slideIndex-1].className += " active";
         }
+        document.addEventListener('DOMContentLoaded', function() {
+            var selectedLanguage = localStorage.getItem('selectedLanguage') || 'en'; // ตั้งค่าเริ่มต้นเป็น 'en' หากไม่มีการเลือกภาษาก่อนหน้า
+            changeLanguage(selectedLanguage);
+        });
+
+            document.getElementById('languageButton').addEventListener('click', function() {
+            var btn = document.getElementById('languageButton');
+            if (btn.innerText === "EN") {
+                btn.innerText = "TH";
+                changeLanguage('en');
+            } else {
+                btn.innerText = "EN";
+                changeLanguage('th');
+            }
+            });
+
+        function changeLanguage(lang) {
+            document.querySelectorAll("[data-en], [data-th]").forEach(el => {
+                el.innerText = el.dataset[lang];
+        });
+        localStorage.setItem('selectedLanguage', lang);
+        } 
     </script>
 </body>
 </html>

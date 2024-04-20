@@ -13,13 +13,15 @@
             <h4 style="display: inline; color: white;">Mr. Sirirat Sanghkao</h4>
         </div>
         <nav style="display: flex; margin-right: 150px;">
-            <a href="index.html#home" style="color: white; margin-right: 10px; text-decoration: none;">Home</a>
-            <a href="index.html#about" style="color: white; margin-right: 10px; text-decoration: none;">Profile</a>
-            <a href="index.html#portfolio" style="color: white; text-decoration: none;  margin-right: 10px;">Competitions</a>
-            <a href="index.html#projects" style="color: white; text-decoration: none;  margin-right: 10px;">Projects</a>
-            <a href="index.html#activity" style="color: white; text-decoration: none; margin-right: 10px;">Activities</a>
-            <a href="index.html#internship" style="color: white; text-decoration: none; margin-right: 10px;">Internship</a>
-            <a href="index.html#contact" style="color: white; text-decoration: none; margin-right: 10px;">Contact</a>
+            <a href="index.html#home" style="color: white; margin-right: 10px; text-decoration: none;" data-en="Home" data-th="หน้าหลัก"></a>
+            <a href="index.html#about" style="color: white; margin-right: 10px; text-decoration: none;" data-en="Profile" data-th="ข้อมูลส่วนตัว"></a>
+            <a href="index.html#portfolio" style="color: white; text-decoration: none; margin-right: 10px;" data-en="Competitions" data-th="ผลงานการแข่งขัน"></a>
+            <a href="index.html#projects" style="color: white; text-decoration: none; margin-right: 10px;" data-en="Projects" data-th="ผลงานโปรเจค"></a>
+            <a href="index.html#activity" style="color: white; text-decoration: none; margin-right: 10px;" data-en="Activities" data-th="กิจกรรม"></a>
+            <a href="index.html#internship" style="color: white; text-decoration: none; margin-right: 10px;" data-en="Internship" data-th="การฝึกงาน"></a>
+            <a href="index.html#contact" style="color: white; text-decoration: none; margin-right: 10px;" data-en="Contact" data-th="ติดต่อ"></a>
+            <!-- เพิ่มปุ่ม Language ที่นี่ -->
+            <button id="languageButton" style="margin-left: 20px; background-color: #ff9d1d; color: white; border: none; cursor: pointer; padding: 10px 20px; border-radius: 20px; font-size:90%;">TH</button>
         </nav>
     </header> 
     <!-- <header>
@@ -27,7 +29,8 @@
     </header> -->
 
     <section class="project-details">
-        <h2>Develop a model to classify popular dog and cat breeds in Thailand from images</h2>
+        <h2 data-en="Develop a model to classify popular dog and cat breeds in Thailand from images"
+            data-th="พัฒนาโมเดลสำหรับทำนายสายพันธุ์หมาแมวยอดฮิตในไทยจากรูป"></h2>
         <div class="slider">
             <div class="slides">
                 <div class="slide"><img src="image/botnoi1.png" alt="Image 1"></div>
@@ -44,33 +47,40 @@
                 <!-- เพิ่ม span สำหรับแต่ละรูปภาพ -->
             </div>
         </div>
-        <h2>Project Name</h2>
-        <p>Develop a model to classify popular dog and cat breeds in Thailand from images</p>
-        <h2>Project Details</h2>
-        <p>
-            Develop a model for image classification using the LinearSVC (Support Vector Machine) model as educational content for a course offered by the company to the general public interested in Data Science. This project involves techniques such as image size reduction to decrease data volume, converting image data into vectors, and training the LinearSVC (SVM) model. Additionally, write a blog on Medium to explain the basic principles for those interested in this type of work, and create a website for users to try out the model via Streamlit.
+        <h2 data-en="Project Name" data-th="ชื่อโปรเจค"></h2>
+        <p data-en="Develop a model to classify popular dog and cat breeds in Thailand from images"
+            data-th="พัฒนาโมเดลสำหรับทำนายสายพันธุ์หมาแมวยอดฮิตในไทยจากรูป"></p>
+        <h2 data-en="Project Details" data-th="รายละเอียดโปรเจค"></h2>
+        <p data-en=" developed an image prediction model using the LinearSVC (Support Vector Machine), a fundamental machine learning model. This project is part of the educational content offered by a company to individuals interested in the field of Data Science. The project includes various data preparation techniques, such as resizing images to uniform dimensions, converting images for machine learning model comprehension, and training the LinearSVC (SVM) model. Additionally, I have written a blog post on Medium to explain the basic principles, making it accessible for those interested in this field. Moreover, I created a web application for experimenting with the model."
+            data-th="พัฒนาโมเดลการทำนายรูปภาพ โดยใช้โมเดล LinearSVC(Support Vector Machine)ที่เป็นMachine learning model พื้นฐาน และโปรเจคตัวนี้เป็น 1 ในสื่อการเรียนการสอนของบริษัทที่เปิดสอนให้กับบุคคลที่สนใจงานทางด้าน Data Science โดยโปรเจคนี้จะมีการเทคนิคต่างๆที่เกี่ยวข้องกับการเตรียมข้อมูล เช่น การลดขนาดรูปภาพให้เท่ากัน การแปลงรูปภาพให้Machine learning model เข้าใจ และการฝึกสอนโมเดล LinearSVC(SVM) นอกจากนี้ ผู้จัดทำได้เขียน Blog ในช่องทาง Medium เพื่ออธิบายหลักการพื้นฐานเพื่อให้ผู้สนใจงานประเภทนี้เข้าใจ และได้สร้างเว็บแอปพลิเคชั่นเพื่อใช้สำหรับการทดลองเล่นโมเดล">
         </p>
-        <h2>Roles and Project Work Details</h2>
-        <p class="work-details"><strong style="color: #ee7700;">Role : </strong> Data Scientist, Project Developer</p>
+        <h2 data-en="Roles and Project Work Details" data-th="ตำแหน่งและรายละเอียดการทำงาน"></h2>
+        <p class="work-details"><strong style="color: #ee7700;" data-en="Role : " data-th="ตำแหน่ง : "></strong> Data Scientist, Project Developer</p>
         <p class="work-details">
-            <strong style="color: #ee7700;">Work Details:</strong>
+            <strong style="color: #ee7700;" data-en="Work Details: " data-th="รายละเอียดการทำงาน"></strong>
             <ol>
-                <li>Researched techniques for image classification.</li>
-                <li>Prepared data for training and testing the model, including:
+                <li data-en="Researched techniques for image classification." data-th="ศึกษาเทคนิคการทำ image classification"></li>
+                <li data-en="Prepared data for training and testing the model, including:" data-th="เตรียมความพร้อมของข้อมูล สำหรับฝึกสอน และทดสอบโมเดล โดยมี">
                     <ol>
-                        <li>Preparing images and labels using the company's library to assist in preparation.</li>
-                        <li>Standardizing image sizes to ensure uniformity.</li>
-                        <li>Converting image data into vectors.</li>
-                        <li>Training the SVM model.</li>
+                        <li data-en="Preparing images and labels using the company's library to assist in preparation."
+                            data-th="เตรียมรูปภาพ และ label โดยใช้ libary ของทางบริษัทในการช่วยเตรียม"></li>
+                        <li data-en="Standardizing image sizes to ensure uniformity."
+                            data-th="กำหนดขนาดของรูปภาพให้เป็นมาตรฐานเดียวกัน"></li>
+                        <li data-en="Converting image data into vectors."
+                            data-th="แปลงข้อมูลจากรูปภาพเป็นเวคเตอร์"></li>
+                        <li data-en="Training the SVM model."
+                            data-th="ฝึกสอนโมเดล SVM"></li>
                     </ol>
                 </li>
-                <li>Shared knowledge through writing a blog on Medium to educate peers on this segment.</li>
-                <li>Utilized the Streamlit library in Python to create a simple web app, suitable for data visualization tasks.</li>
+                <li data-en="Shared knowledge through writing a blog on Medium to educate peers on this segment."
+                    data-th="แบ่งปันความรู้ที่ได้ผ่านการเขียน blog ใน Medium เพื่อให้เพื่อนๆหรือผู้ที่สนใจได้อ่าน"></li>
+                <li data-en="Utilized the Streamlit library in Python to create a simple web app, suitable for data visualization tasks."
+                    data-th="สร้างเว็บแอปพลิเคชั่น ด้วย streamlit โดย streamlit ที่เป็น libary ของ python เพื่อใช้ในการพัฒนาเว็บแอปพลิเคชั่น"></li>
             </ol>
         </p>
 
 
-        <h2>Tools</h2>
+        <h2 data-en="Tools" data-th="เครื่องมือที่ใช้"></h2>
         <ul>
             <li>pandas</li>
             <li>keras</li>
@@ -79,12 +89,12 @@
             <li>Streamlit</li>
             <!-- เพิ่มเทคโนโลยีอื่นๆ ที่ใช้ -->
         </ul>
-        <h2>Programming Languages</h2>
+        <h2 data-en="Programming Languages" data-th="ภาษาโปรแกรมที่ใช้ในการพัฒนาโปรเจค"></h2>
         <ul>
             <li>Python</li>
             <!-- เพิ่มเทคโนโลยีอื่นๆ ที่ใช้ -->
         </ul>
-        <h2>Programs</h2>
+        <h2 data-en="Programs" data-th="โปรแกรมที่ใช้ใรการพัฒนาโปรเจค"></h2>
         <ul>
             <li>Google colab</li>
             <li>VS Code</li>
@@ -97,8 +107,9 @@
         <h2>Medium Link</h2>
         <a href="https://medium.com/@DodoSirirat/image-classification-108ebbb19514" target="_blank">Medium</a>
 
-        <h2> Work Explanation Video Link</h2>
-        <a href="https://youtu.be/AZqI-l4UJxo" target="_blank">Youtube</a>
+        <h2 data-en=" Work Explanation Video Link" data-th="วิดีโออธิบายการทำงาน"></h2>
+        <!-- <a href="https://youtu.be/AZqI-l4UJxo" target="_blank">Youtube</a> -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/AZqI-l4UJxo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
     </section>
 
@@ -135,6 +146,30 @@
         slides[slideIndex-1].style.display = "block";
         dots[slideIndex-1].className += " active";
         }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var selectedLanguage = localStorage.getItem('selectedLanguage') || 'en'; // ตั้งค่าเริ่มต้นเป็น 'en' หากไม่มีการเลือกภาษาก่อนหน้า
+            changeLanguage(selectedLanguage);
+        });
+
+            document.getElementById('languageButton').addEventListener('click', function() {
+            var btn = document.getElementById('languageButton');
+            if (btn.innerText === "EN") {
+                btn.innerText = "TH";
+                changeLanguage('en');
+            } else {
+                btn.innerText = "EN";
+                changeLanguage('th');
+            }
+            });
+
+        function changeLanguage(lang) {
+            document.querySelectorAll("[data-en], [data-th]").forEach(el => {
+                el.innerText = el.dataset[lang];
+        });
+        localStorage.setItem('selectedLanguage', lang);
+        } 
+        
     </script>
 </body>
 </html>

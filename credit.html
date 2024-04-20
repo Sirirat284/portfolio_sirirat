@@ -13,13 +13,15 @@
             <h4 style="display: inline; color: white;">Mr. Sirirat Sanghkao</h4>
         </div>
         <nav style="display: flex; margin-right: 150px;">
-            <a href="index.html#home" style="color: white; margin-right: 10px; text-decoration: none;">Home</a>
-            <a href="index.html#about" style="color: white; margin-right: 10px; text-decoration: none;">Profile</a>
-            <a href="index.html#portfolio" style="color: white; text-decoration: none;  margin-right: 10px;">Competitions</a>
-            <a href="index.html#projects" style="color: white; text-decoration: none;  margin-right: 10px;">Projects</a>
-            <a href="index.html#activity" style="color: white; text-decoration: none; margin-right: 10px;">Activities</a>
-            <a href="index.html#internship" style="color: white; text-decoration: none; margin-right: 10px;">Internship</a>
-            <a href="index.html#contact" style="color: white; text-decoration: none; margin-right: 10px;">Contact</a>
+            <a href="index.html#home" style="color: white; margin-right: 10px; text-decoration: none;" data-en="Home" data-th="หน้าหลัก"></a>
+            <a href="index.html#about" style="color: white; margin-right: 10px; text-decoration: none;" data-en="Profile" data-th="ข้อมูลส่วนตัว"></a>
+            <a href="index.html#portfolio" style="color: white; text-decoration: none; margin-right: 10px;" data-en="Competitions" data-th="ผลงานการแข่งขัน"></a>
+            <a href="index.html#projects" style="color: white; text-decoration: none; margin-right: 10px;" data-en="Projects" data-th="ผลงานโปรเจค"></a>
+            <a href="index.html#activity" style="color: white; text-decoration: none; margin-right: 10px;" data-en="Activities" data-th="กิจกรรม"></a>
+            <a href="index.html#internship" style="color: white; text-decoration: none; margin-right: 10px;" data-en="Internship" data-th="การฝึกงาน"></a>
+            <a href="index.html#contact" style="color: white; text-decoration: none; margin-right: 10px;" data-en="Contact" data-th="ติดต่อ"></a>
+            <!-- เพิ่มปุ่ม Language ที่นี่ -->
+            <button id="languageButton" style="margin-left: 20px; background-color: #ff9d1d; color: white; border: none; cursor: pointer; padding: 10px 20px; border-radius: 20px; font-size:90%;">TH</button>
         </nav>
     </header> 
     <!-- <header>
@@ -27,7 +29,7 @@
     </header> -->
 
     <section class="project-details">
-        <h2>Credit Card Approval Prediction</h2>
+        <h2 data-en="Credit Card Approval Prediction" data-th="เว็บแอพพลิเคชั่น ทำนายโอกาสที่จะได้รับการอนุมัติในการสมัครบัตรเคดิต"></h2>
         <div class="slider">
             <div class="slides">
                 <div class="slide"><img src="image/credit5.png" alt="Image 1"></div>
@@ -44,25 +46,28 @@
                 <!-- เพิ่ม span สำหรับแต่ละรูปภาพ -->
             </div>
         </div>
-        <h2>Project Name</h2>
-        <p>Credit Card Approval Prediction</p>
-        <h2>Project Details</h2>
-        <p>
-            Develop a web application and a Machine Learning model to predict the likelihood of a customer being approved or rejected for a credit card application by a bank, using the "credit-card-approval-prediction" dataset. In this project, basic data management techniques such as data cleaning, data transformation, data reduction, and addressing imbalance data issues were employed before training the model.
+        <h2 data-en="Project Name" data-th="ชื่อโปรเจค"></h2>
+        <p data-en="Credit Card Approval Prediction" data-th="เว็บแอพพลิเคชั่น ทำนายโอกาสที่จะได้รับการอนุมัติในการสมัครบัตรเคดิต"></p>
+        <h2 data-en="Project Details" data-th="รายละเอียดโปรเจค"></h2>
+        <p data-en='Develop a web application and a Machine Learning model to predict the likelihood of a customer being approved or rejected for a credit card application by a bank, using the "credit-card-approval-prediction" dataset. In this project, basic data management techniques such as data cleaning, data transformation, data reduction, and addressing imbalance data issues were employed before training the model.'
+            data-th="พัฒนาเว็บแอปพลิเคชั่น และ โมเดล Machine learning เพื่อทำนายโอกาสที่ลูกค้าที่สนใจทำบัตรเคดิตจะได้รับการอนุมัติจากธนาคาร โดยใช้ชุดมูล credit-card-approval-prediction ในโปรเจคนี้มีการใข้เทคนิคการเตรียมข้อมูลแบบพื้นฐาน เช่น data cleaning, data transformation, data reduction และการจัดการความสมดุลของข้อมูล ">
         </p>
-        <h2>Roles and Project Work Details</h2>
-        <p class="work-details"><strong style="color: #ee7700;">Role : </strong>  Frontend Developer, Machine Learning Model Co-developer, Backend System Consultant</p>
+        <h2 data-en="Roles and Project Work Details" data-th="ตำแหน่งและรายละเอียดการทำงาน"></h2>
+        <p class="work-details"><strong style="color: #ee7700;" data-en="Role : " data-th="ตำแหน่ง : "></strong>  Frontend Developer, Machine Learning Model Co-developer, Backend System Consultant</p>
         <p class="work-details">
-            <strong style="color: #ee7700;">Work Details:</strong>
+            <strong style="color: #ee7700;" data-en="Work Details: " data-th="รายละเอียดการทำงาน"></strong>
             <ol>
-                <li>Analyzed data to find insights.</li>
-                <li>Prepared data through various processes such as cleaning data, handling missing values, transforming data, and addressing data imbalance with smoothing techniques.</li>
-                <li>Developed web pages for data entry for predictive purposes and other appropriate functions.</li>
-                <li>Provided advice on backend system development.</li>
+                <li data-en="Analyzed data to find insights." data-th="วิเคราะห์ข้อมูลเพื่อหาข้อมูลเชิงลึกจากข้อมูล"></li>
+                <li data-en="Prepared data through various processes such as cleaning data, handling missing values, transforming data, and addressing data imbalance with smoothing techniques."
+                    data-th="เตรียมความพร้อมของข้อมูล ด้วยกระบวนการต่างๆ เช่น การทำความสะอาดข้อมูล, การจัดการกับmissing values, การแปลงข้อมูล, การจัดการความสมดุลของข้อมูลด้วยเทคนิค smoothing"></li>
+                <li data-en="Developed web pages for data entry for predictive purposes and other appropriate functions."
+                    data-th="พัฒนาหน้าเว็บสำหรับรับ input เพื่อการทำนายและฟังก์ชั่นอื่นๆของเว็บ"></li>
+                <li data-en="Provided advice on backend system development."
+                    data-th="ให้คำแนะนำเกี่ยวกับการทำงานของระบบการทำงานฝั่ง Backend"></li>
             </ol>
         </p>
 
-        <h2>Tools</h2>
+        <h2 data-en="Tools" data-th="เครื่องมือที่ใช้"></h2>
         <ul>
             <li>pandas</li>
             <!-- <li>tensorflow</li> -->
@@ -71,14 +76,14 @@
             <li>matplotlib</li>
             <!-- เพิ่มเทคโนโลยีอื่นๆ ที่ใช้ -->
         </ul>
-        <h2>Programming Languages</h2>
+        <h2 data-en="Programming Languages" data-th="ภาษาโปรแกรมที่ใช้ในการพัฒนาโปรเจค"></h2>
         <ul>
             <li>Python</li>
             <li>Next JS</li>
             <li>Node JS</li>
             <!-- เพิ่มเทคโนโลยีอื่นๆ ที่ใช้ -->
         </ul>
-        <h2>Programs</h2>
+        <h2 data-en="Programs" data-th="โปรแกรมที่ใช้ใรการพัฒนาโปรเจค"></h2>
         <ul>
             <li>Google colab</li>
             <li>VS Code</li>
@@ -125,6 +130,29 @@
         slides[slideIndex-1].style.display = "block";
         dots[slideIndex-1].className += " active";
         }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var selectedLanguage = localStorage.getItem('selectedLanguage') || 'en'; // ตั้งค่าเริ่มต้นเป็น 'en' หากไม่มีการเลือกภาษาก่อนหน้า
+            changeLanguage(selectedLanguage);
+        });
+
+            document.getElementById('languageButton').addEventListener('click', function() {
+            var btn = document.getElementById('languageButton');
+            if (btn.innerText === "EN") {
+                btn.innerText = "TH";
+                changeLanguage('en');
+            } else {
+                btn.innerText = "EN";
+                changeLanguage('th');
+            }
+            });
+
+        function changeLanguage(lang) {
+            document.querySelectorAll("[data-en], [data-th]").forEach(el => {
+                el.innerText = el.dataset[lang];
+        });
+        localStorage.setItem('selectedLanguage', lang);
+        }  
     </script>
 </body>
 </html>

@@ -16,42 +16,45 @@
     </style>
 </head>
 <body>
-    <header >
+    <header>
         <div>
             <h2 style="display: inline; margin-left: 20px; color: white;">Portfolio</h2>
             <h4 style="display: inline; color: white;">Mr. Sirirat Sanghkao</h4>
         </div>
         <nav style="display: flex; margin-right: 150px;">
-            <a href="#home" style="color: white; margin-right: 10px; text-decoration: none;">Home</a>
-            <a href="#about" style="color: white; margin-right: 10px; text-decoration: none;">Profile</a>
-            <a href="#portfolio" style="color: white; text-decoration: none;  margin-right: 10px;">Competitions</a>
-            <a href="#projects" style="color: white; text-decoration: none;  margin-right: 10px;">Projects</a>
-            <a href="#activity" style="color: white; text-decoration: none; margin-right: 10px;">Activities</a>
-            <a href="#internship" style="color: white; text-decoration: none; margin-right: 10px;">Internship</a>
-            <a href="#contact" style="color: white; text-decoration: none; margin-right: 10px;">Contact</a>
+            <a href="#home" style="color: white; margin-right: 10px; text-decoration: none;" data-en="Home" data-th="หน้าหลัก"></a>
+            <a href="#about" style="color: white; margin-right: 10px; text-decoration: none;" data-en="Profile" data-th="ข้อมูลส่วนตัว"></a>
+            <a href="#portfolio" style="color: white; text-decoration: none; margin-right: 10px;" data-en="Competitions" data-th="ผลงานการแข่งขัน"></a>
+            <a href="#projects" style="color: white; text-decoration: none; margin-right: 10px;" data-en="Projects" data-th="ผลงานโปรเจค"></a>
+            <a href="#activity" style="color: white; text-decoration: none; margin-right: 10px;" data-en="Activities" data-th="กิจกรรม"></a>
+            <a href="#internship" style="color: white; text-decoration: none; margin-right: 10px;" data-en="Internship" data-th="การฝึกงาน"></a>
+            <a href="#contact" style="color: white; text-decoration: none; margin-right: 10px;" data-en="Contact" data-th="ติดต่อ"></a>
+            <!-- เพิ่มปุ่ม Language ที่นี่ -->
+            <button id="languageButton" style="margin-left: 20px; background-color: #ff9d1d; color: white; border: none; cursor: pointer; padding: 10px 20px; border-radius: 20px; font-size:90%;">TH</button>
         </nav>
-    </header>    
+    </header>
+    
     
     <div id="home" class="background">
         <div class="greeting-text">
-            <h1>Welcome to the Portfolio of </h1>
+            <h1>Welcome to the Portfolio of Mr. Sirirat Sanghkao</h1>
             <h4>Mr.Sirirat Sanghkao</h4>
             <p>ยินดีต้อนรับเข้าสู้แฟ้มสะสมผลงานของ นาย ศิริรัฐ สังข์ขาว</p>
         </div>
     </div>
     <section id="about" style="background-color: #ffffff; padding: 20px;">
-        <h2 style="text-align: center; color: #0056b3;">Personal Information</h2>
+        <h2 style="text-align: center; color: #0056b3;" data-en="Personal Information" data-th="ข้อมูลส่วนตัว"></h2>
         <div class="container" style="display: flex; justify-content: center; align-items: center; max-width: 800px; margin: auto;">
             <div class="profile-image" style="margin-right: 20px;">
                 <img src="image/IMG_5865.JPG" alt="Your Name" style="width: 200px; height: auto; border-radius: 10px;">
             </div>
             <div class="profile-info" style="flex-grow: 1;">
-                <p class="animate-text" style="animation-delay: 0.05s;"><strong >Name:</strong> Mr.Sirirat Sanghkao <strong>Nickname:</strong> Dodo</p>
-                <p class="animate-text" style="animation-delay: 0.08s;"><strong>Age:</strong> <span id="age">Calculating...</span><strong> years old</strong></p>
+                <p class="animate-text" style="animation-delay: 0.05s;" ><strong data-en="Name:" data-th="ชื่อ:"></strong><span data-en=" Mr.Sirirat Sanghkao" data-th="นาย ศิริรัฐ สังข์ขาว"></span> <strong data-en="Nickname:" data-th="ชื่อเล่น:"></strong><span data-en="Dodo" data-th="โด้"></span></p>
+                <p class="animate-text" style="animation-delay: 0.08s;"><strong data-en="Age:" data-th="อายุ:"></strong> <span id="age">Calculating...</span><strong data-en="years old" data-th="ปี"> </strong></p>
                 <script src="cal_age.js"></script>
-                <p class="animate-text" style="animation-delay: 0.11s;"><strong>Education:</strong> Bachelor's Degree</p>
-                <p class="animate-text" style="animation-delay: 0.14s;"><strong>Faculty:</strong> Faculty of Science <strong>Major:</strong> Computer Science</p>
-                <p class="animate-text" style="animation-delay: 0.17s;"><strong>King Mongkut's Institute of Technology Ladkrabang</strong> </p>
+                <p class="animate-text" style="animation-delay: 0.11s;"><strong data-en="Education:" data-th="การศึกษา:"></strong><span data-en="Bachelor's Degree" data-th="ปริญญาตรี"></span></p>
+                <p class="animate-text" style="animation-delay: 0.14s;"><strong data-en="Faculty:" data-th="คณะ:"></strong> <span data-en="Faculty of Science" data-th="วิทยาศาสตร์"></span> <strong data-en="Major:" data-th="สาขา:"></strong> <span data-en="Computer Science" data-th="วิทยาการคอมพิวเตอร์"></span></p>
+                <p class="animate-text" style="animation-delay: 0.17s;"><strong data-en="King Mongkut's Institute of Technology Ladkrabang" data-th="สถาบันเทคโลโนยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง"></strong> </p>
                 <p class="animate-text" style="animation-delay: 0.20s;"><strong>GPA :</strong> 3.05 </p>
                 <!-- <p class="animate-text" style="animation-delay: 0.23s;"><strong>Skills </strong> 
                     <br/>&emsp;&emsp;<strong>Programming Language :</strong> Python, JAVA,  Node JS, Next JS, HTML&CSS&JavaScript, PHP, SQL
@@ -72,8 +75,8 @@
         </div>
     </section>
     <div class="skills-container">
-        <h2 style="text-align: center; color: #0056b3;">My Skills</h2>
-        <h2 style="text-align: center;color: #ee7700;">Programming Language</h2>
+        <h2 style="text-align: center; color: #0056b3;" data-en="My Skills" data-th="ความสามารถ"></h2>
+        <h2 style="text-align: center;color: #ee7700;" data-en="Programming Language" data-th="ภาษาเขียนโปรแกรมมิ่ง"></h2>
         <div class="skills-grid">
             <div class="skill-item" data-skill="python">
                 <img src="image/icons8-python-96.png" alt="python">
@@ -122,7 +125,7 @@
             </div>
             <!-- ซ้ำๆ สำหรับ CSS 3, JavaScript, Python, Sass, MySQL -->
         </div>
-        <h2 style="text-align: center;color: #ee7700;">Other Skills</h2>
+        <h2 style="text-align: center;color: #ee7700;" data-en="Other Skills" data-th="ความสามารถอื่นๆ"></h2>
         <div class="other-skills-grid">
             <div class="other-skill-item" data-skill="python">
                 <img src="image/icons8-ai-100.png" alt="python">
@@ -131,18 +134,19 @@
             </div>
             <div class="other-skill-item" data-skill="python">
                 <img src="image/icons8-analysis-100.png" alt="python">
-                <h3>Analysis Data</h3>
+                <h3 data-en="Analysis Data" data-th="วิเคราะห์ข้อมูล"></h3>
                 <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
             </div>
             <div class="other-skill-item" data-skill="python">
                 <img src="image/icons8-diagram-100.png" alt="python">
-                <h3>Able to analyze and design ER Diagrams</h3>
+                <h3 data-en="Able to analyze and design ER Diagrams" data-th="สามารถวิเคราะห์และออกแบบ ER Diagrams"></h3>
                 <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
             </div>
             <div class="other-skill-item" data-skill="python">
                 <img src="image/icons8-flow-100.png" alt="python">
-                <h3>Able to analyze and design Use Case Diagrams,
-                    Activity Diagrams, and Sequence Diagrams</h3>
+                <h3 data-en="Able to analyze and design Use Case Diagrams,
+                Activity Diagrams, and Sequence Diagrams" data-th="สามารถวิเคราะห์และออกแบบ Use Case Diagrams,
+                Activity Diagrams, and Sequence Diagrams"></h3>
                 <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
             </div>
         </div>
@@ -150,7 +154,7 @@
     
 
     <div class="skills-container">
-        <h2 style="text-align: center; color: #0056b3;">Tools</h2>
+        <h2 style="text-align: center; color: #0056b3;" data-en="Tools" data-th="เครื่องมือที่ใช้เป็น"></h2>
         <div class="skills-grid">
             <div class="skill-item" data-skill="python">
                 <img src="image/icons8-pandas-96.png" alt="python">
@@ -216,7 +220,7 @@
     </div>
     
     <div class="skills-container">
-        <h2 style="text-align: center; color: #0056b3;">Programs</h2>
+        <h2 style="text-align: center; color: #0056b3;" data-en="Programs" data-th="โปรแกรมที่ใช้งานเป็น"></h2>
         <div class="skills-grid">
             <div class="skill-item" data-skill="python">
                 <img src="image/icons8-tableau-software-96.png" alt="python">
@@ -297,19 +301,21 @@
     </div>
     
     <br>
-    <h2 id="portfolio" style="text-align: center; color: #0056b3;">Competition Results</h2>
+    <h2 id="portfolio" style="text-align: center; color: #0056b3;" data-en="Competition Results" data-th="ผลงานการแข่งขัน"></h2>
     <div  class="portfolio-section">
         <div class="portfolio" onclick="this.classList.toggle('is-flipped')">
             <div class="portfolio-inner">
                 <div class="portfolio-front">
                     <img src="image/Certificate.png" alt="Certificate">
                     <h2>SAS X KMITL Hackathon 3nd</h2>
-                    <button>Details</button>
+                    <button data-en="Details" data-th="รายละเอียด"></button>
                 </div>
                 <div class="portfolio-back"  >
                     <h2>SAS X KMITL Hackathon 3nd</h2>
-                    <p><strong>Award : </strong> Gold Medal, Second Runner-up</p>
-                    <p>This competition involves data analysis and the development of Machine Learning models to predict the likelihood of customers making donations when contacted. With a dataset of 1 million historical records prepared by SAS, participants are tasked with determining if a client will contribute financially upon being approached. The SAS VIYA program is provided for use in this competition
+                    <p><strong data-en="Award :" data-th="รางวัล :"></strong><span data-en="Gold Medal, Second Runner-up" data-th="รองชนะเลิศเหรียญทองอันดับ 2"></span></p>
+                    <p data-en="This competition involves data analysis and the development of Machine Learning models to predict the likelihood of customers making donations when contacted. With a dataset of 1 million historical records prepared by SAS, participants are tasked with determining if a client will contribute financially upon being approached. The SAS VIYA program is provided for use in this competition"
+                        data-th="การแข่งขันนี้เป็นการแข่งขันที่เกี่ยวข้องกับการวิเคราะห์ข้อมูลและการพัฒนาโมเดล Machine learning เพื่อทำการทำนายความเป็นไปได้ที่ลูกค้าจะบริจาคเงินเมื่อเราติดต่อไป ด้วยชุดข้อมูลที่ทางผู้จัดการแข่งได้จัดเตรียมไว้ให้จำนวน 1 ล้านข้อมูล ในการแข่งขันนี้ทางผู้จัดการแข่งขันได้ให้ใช้โปรแกรม SAS VIYA ในการแข่งขัน"
+                    >
                     </p>
                 </div>
             </div>
@@ -319,12 +325,14 @@
                 <div class="portfolio-front">
                     <img src="image/Sas.png" alt="Certificate">
                     <h2>SAS X KMITL Hackathon 2nd</h2>
-                    <button>Details</button>
+                    <button data-en="Details" data-th="รายละเอียด"></button>
                 </div>
                 <div class="portfolio-back"  >
                     <h2>SAS X KMITL Hackathon 2nd</h2>
-                    <p><strong>Award : </strong> Goal Medal</p>
-                    <p>This competition involves data analysis and the development of Machine Learning models to predict the likelihood of customers making donations when contacted. With a dataset of 1 million historical records prepared by SAS, participants are tasked with determining if a client will contribute financially upon being approached. The SAS VIYA program is provided for use in this competition
+                    <p><strong data-en="Award :" data-th="รางวัล :"></strong><span data-en="Gold Medal" data-th="เหรียญทอง"></span></p>
+                    <p data-en="This competition involves data analysis and the development of Machine Learning models to predict the likelihood of customers making donations when contacted. With a dataset of 1 million historical records prepared by SAS, participants are tasked with determining if a client will contribute financially upon being approached. The SAS VIYA program is provided for use in this competition"
+                        data-th="การแข่งขันนี้เป็นการแข่งขันที่เกี่ยวข้องกับการวิเคราะห์ข้อมูลและการพัฒนาโมเดล Machine learning เพื่อทำการทำนายความเป็นไปได้ที่ลูกค้าจะบริจาคเงินเมื่อเราติดต่อไป ด้วยชุดข้อมูลที่ทางผู้จัดการแข่งได้จัดเตรียมไว้ให้จำนวน 1 ล้านข้อมูล ในการแข่งขันนี้ทางผู้จัดการแข่งขันได้ให้ใช้โปรแกรม SAS VIYA ในการแข่งขัน"
+                    >
                     </p>
                 </div>
             </div>
@@ -334,12 +342,13 @@
                 <div class="portfolio-front">
                     <img src="image/ASEAN .png" alt="Certificate">
                     <h2>ASEAN Data Science Explorers</h2>
-                    <button>Details</button>
+                    <button data-en="Details" data-th="รายละเอียด"></button>
                 </div>
                 <div class="portfolio-back" >
                     <h2>ASEAN Data Science Explorers</h2>
-                    <p><strong>Award : </strong> Participation</p>
-                    <p>The competition involves analyzing problems occurring within ASEAN, referencing the Sustainable Development Goals (SDGs). This competition aims to identify key information about the issues and present solutions to the committee for addressing these problems.
+                    <p><strong data-en="Award :" data-th="รางวัล :"></strong><span data-en="Participation" data-th="เข้าร่วม"></span></p>
+                    <p data-en="The competition involves analyzing problems occurring within ASEAN, referencing the Sustainable Development Goals (SDGs). This competition aims to identify key information about the issues and present solutions to the committee for addressing these problems."
+                        data-th="การแข่งขันนี้เกี่ยวข้องกับการวิเคราะห์ปัญหาที่เกิดขึ้นในอาเซียนพร้อมแนวทางการแก้ไขปัญหา โดยการแข่งขันนี้จะอ้างอิงหัวข้อจาก เป้าหมายการพัฒนาที่ยั่งยืน (Sustainable Development Goals: SDGs) ">
                     </p>
                 </div>
             </div>
@@ -349,12 +358,13 @@
                 <div class="portfolio-front">
                     <img src="image/code_arcade.png" alt="Certificate_code_arcade">
                     <h2>Code Arcade 2021 Booster</h2>
-                    <button>Details</button>
+                    <button data-en="Details" data-th="รายละเอียด"></button>
                 </div>
                 <div class="portfolio-back">
                     <h2>Code Arcade 2021 Booster</h2>
-                    <p><strong>Award : </strong> Bronze Medal</p>
-                    <p>The competition involves Java programming to solve specific problems, primarily organized for Computer Science students in their 1st to 4th year who are interested and wish to demonstrate their skills. They are encouraged to participate in the competition.
+                    <p><strong data-en="Award :" data-th="รางวัล :"></strong><span data-en="Bronze Medal" data-th="เหรียญทองแดง"></span></p>
+                    <p data-en="The competition involves Java programming to solve specific problems, primarily organized for Computer Science students in their 1st to 4th year who are interested and wish to demonstrate their skills. They are encouraged to participate in the competition."
+                        data-th="การแข่งขันนี้เป็นการแข่งขันการเขียนโปรแกรมเพ่ือแก้โจทย์ปัญหาจากภาษา Java โดยการแข่งขันนี้เป็นการแข่งขันที่จัดขึ้นโดย คณะวิทยาศาสตร์ สาขาวิทยาการคอมพิวเตอร์ โดยเป็นการจัดการแข่งขันให้กับนักศีกษาชั้นปีที่ 1 - 4 ที่สนใจ">
                     </p>
                 </div>
             </div>
@@ -363,14 +373,18 @@
     </div>
     <br>
     <div id="projects" class="project-section" style="background-color: #ffffff;">
-        <h2 style="text-align: center; color: #0056b3;">Project Achievements</h2>
+        <h2 style="text-align: center; color: #0056b3;" data-en="Project Achievements" data-th="ผลงานโปรเจค"></h2>
         <div class="project">
             <a href="senoir_project.html" style="text-decoration: none; color: inherit;">
                 <div class="project-inner">
                     <div class="">
                         <img src="image/senoirproject.png" alt="Project">
-                        <h5>Court Verdict Classification and Prediction in Thai Juvenile and Family Courts <strong style="color: red;">(Graduation Project)</strong></h5>
-                        <button>Details</button>
+                        <h5><span  data-en="Court Verdict Classification and Prediction in Thai Juvenile and Family Courts" 
+                                    data-th="การพัฒนาโมเดลทำนายและจำแนกโทษของศาลเยาวชนและครอบครัว">
+                            </span> 
+                            <strong style="color: red;" data-en="(Graduation Project)" data-th="(โปรเจคสำเร็จการศึกษา)"></strong>
+                        </h5>
+                        <button data-en="Details" data-th="รายละเอียด"></button>
                     </div>
                 </div>
             </a>
@@ -381,9 +395,9 @@
                 <div class="project-inner">
                     <div class="">
                         <img src="image/credit5.png" alt="Project">
-                        <h3>Credit Card Approval Prediction</h3>
+                        <h3><span data-en="Web application Credit card Approval Prediction" data-th="เว็บแอพพลิเคชั่น ทำนายโอกาสที่จะได้รับการอนุมัติในการสมัครบัตรเคดิต"></span></h3>
                         <br><br>
-                        <button>Details</button>
+                        <button data-en="Details" data-th="รายละเอียด"></button>
                     </div>
                 </div>
             </a>
@@ -393,8 +407,9 @@
                 <div class="project-inner">
                     <div class="">
                         <img src="image/botnoi2.png" alt="Project">
-                        <h3 style="padding: 3px;">Develop a model to classify popular dog and cat breeds in Thailand from images <strong style="color: red;">(Internship Project)</strong></h3>
-                        <button>Details</button>
+                        <h3 style="padding: 3px;"><spn data-en="Develop a model to classify popular dog and cat breeds in Thailand from images "
+                                                        data-th="พัฒนาโมเดลสำหรับทำนายสายพันธุ์หมาแมวยอดฮิตในไทยจากรูป"></spn><strong style="color: red;" data-en="(Internship Project)" data-th="(โปรเจคจากการฝึกงาน)"></strong></h3>
+                        <button data-en="Details" data-th="รายละเอียด"></button>
                     </div>
                 </div>
             </a>
@@ -404,9 +419,9 @@
                 <div class="project-inner">
                     <div class="">
                         <img src="image/restaurant1.png" alt="Project">
-                        <h3 style="padding: 3px;">Restaurant and Food Menu Recommendation System</h3>
+                        <h3 style="padding: 3px;"> <span data-en="Restaurant and Food Menu Recommendation System" data-th="ระบบแนะนำร้านอาหารและเมนูอาหาร"></span></h3>
                         <br>
-                        <button>Details</button>
+                        <button data-en="Details" data-th="รายละเอียด"></button>
                     </div>
                 </div>
             </a>
@@ -416,8 +431,8 @@
                 <div class="project-inner">
                     <div class="">
                         <img src="image/chatbot1.png" alt="Project">
-                        <h3 style="padding: 3px;">Career Path Interest-Based Course Recommendation Chatbot</h3>
-                        <button>Details</button>
+                        <h3 style="padding: 3px;"><span data-en="Career Path Interest-Based Course Recommendation Chatbot" data-th="แชทบอทสำหรับแนะนำวิชาเรียนตามสายงานที่สนใจ"></span></h3>
+                        <button data-en="Details" data-th="รายละเอียด"></button>
                     </div>
                 </div>
             </a>
@@ -425,65 +440,74 @@
     </div>
     <br>
     
-    <h2 id="activity" style="text-align: center; color: #0056b3;">Activities</h2>
+    <h2 id="activity" style="text-align: center; color: #0056b3;" data-en="Activities" data-th="กิจกรรมที่เข้าร่วม"></h2>
     <div class="activity">
         <div class="activity-item">
             <img src="image/274576603_10159943165824362_7543356225677631016_n.jpg" alt="Activity Image" class="activity-image">
             <div class="activity-content">
                 <h2> CS Camp 14</h2>
-                <p><strong>Position: </strong>Head of Public Relations</p>
-                <p><strong>Event Details: </strong>This is a camp organized by the Computer Science department, designed for high school students interested in pursuing further education at KMITL's Computer Science faculty. It offers an opportunity to experience the teaching and learning environment, along with various workshops, over a full five days.
+                <p><strong data-en="Position: " data-th="ตำแหน่ง : "></strong><span data-en="Head of Public Relations" data-th="หัวหน้าฝ่ายประชาสัมพันธ์"></span></p>
+                <p><strong data-en="Event Details: " data-th="รายละเอียดกิจกรรม : "></strong> 
+                    <span data-en="This is a camp organized by the Computer Science department, designed for high school students interested in pursuing further education at KMITL's Computer Science faculty. It offers an opportunity to experience the teaching and learning environment, along with various workshops, over a full five days."
+                          data-th="เป็นค่ายที่จัดขึ้นโดย ภาควิชา วิทยาการคอมพิวเตอร์ โดยจัดขึ้นมาเพื่อให้นักเรียนมัธยมปลายที่สนใจอยากเข้าศึกษาต่อในภาควิชาวิทยาการคอม ได้เข้ามาทดลองและสัมผัสประสบการณ์ การเรียนการสอนและเวิร์คช็อปต่างๆ ในระยะเวลา 5 วันเต็ม"> </span>
                 </p>
             </div>
         </div>
         <div class="activity-item">
             <img src="image/IMG_7216.jpg" alt="Activity Image" class="activity-image">
             <div class="activity-content">
-                <h2>Science Faculty Photography Club</h2>
-                <p><strong>Position: </strong>Photographer</p>
-                <p><strong>Event Details: </strong>This is a club involved in photographing events within the Science Faculty. I have been working with this club for a period of 3 years.
+                <h2 data-en="Science Faculty Photography Club" data-th="ชมรมถ่ายภาพคณะวิทยาศาสตร์"></h2>
+                <p><strong data-en="Position: " data-th="ตำแหน่ง : "></strong><span data-en="Photographer" data-th="ช่างภาพ"></span></p>
+                <p><strong data-en="Event Details: " data-th="รายละเอียดกิจกรรม : "></strong>
+                    <span data-en="This is a club involved in photographing events within the Science Faculty. I have been working with this club for a period of 3 years."
+                            data-th="ทำหน้าที่เกี่ยวกับการถ่ายรูปกิจกรรมภายในคณะวิทยาศาสตร์ โดยผมได้ทำหน้าที่นี่มาทั้งหมด 3 ปีด้วยกัน"></span>
                 </p>
             </div>
         </div>
         <div class="activity-item">
             <img src="image/Screenshot 2567-02-27 at 00.10.59.png" alt="Activity Image" class="activity-image">
             <div class="activity-content">
-                <h2>Subject: Programming Language</h2>
-                <p><strong>Position: </strong>Teaching Assistant (TA)</p>
-                <p><strong>Event Details: </strong>
-                    My role as a Teaching Assistant (TA) involved providing additional explanations on topics that students found confusing or unclear, and acting as a mentor for their projects. During the year I served as a TA, due to the COVID-19 pandemic, it was necessary to switch to online teaching methods.
+                <h2 data-en="Subject: Programming Language" data-th="วิชา: Programming Language"></h2>
+                <p><strong data-en="Position: " data-th="ตำแหน่ง : "></strong> <span data-en="Teaching Assistant (TA)" data-th="ผู้ช่วยสอน (TA)"></span></p>
+                <p><strong data-en="Event Details: " data-th="รายละเอียดกิจกรรม : "></strong>
+                    <span data-en="My role as a Teaching Assistant (TA) involved providing additional explanations on topics that students found confusing or unclear, and acting as a mentor for their projects. During the year I served as a TA, due to the COVID-19 pandemic, it was necessary to switch to online teaching methods."
+                          data-th="ตำแหน่งของผมคือผู้ช่วยสอน โดยมีหน้าที่การให้คำแนะนำน้องๆ หรือตอบคำถามในสิ่งที่น้องๆไม่เข้าใจในรายวิชา Programming Language โดยในปีที่ผมได้ทำนั้นอยู่ในสถานะการณ์ โควิด 19 ทำให้ต้องทำการเรียนการสอนผ่านช่องทางออนไลน์ "></span>
                 </p>
             </div>
         </div>
         <div class="activity-item">
             <img src="image/IMG_9762.JPG" alt="Activity Image" class="activity-image">
             <div class="activity-content">
-                <h2>Code Arcade Competition Event</h2>
-                <p><strong>Position: </strong>Contestant</p>
-                <p><strong>Event Details: </strong>
-                    This is a Java programming competition aimed at solving specified problems, specifically organized for Computer Science students from 1st to 4th year who are interested and want to test their skills. They are encouraged to participate in the competition.
+                <h2 data-en="Code Arcade Competition Event" data-th="กิจกรรมการแข่งขัน Code Arcade"></h2>
+                <p><strong data-en="Position: " data-th="ตำแหน่ง : "></strong> <span data-en="Contestant" data-th="ผู้เข้าร่วมการแข่งขัน"></span></p>
+                <p><strong data-en="Event Details: " data-th="รายละเอียดกิจกรรม : "></strong>
+                    <span data-en="The competition involves Java programming to solve specific problems, primarily organized for Computer Science students in their 1st to 4th year who are interested and wish to demonstrate their skills. They are encouraged to participate in the competition."
+                    data-th="การแข่งขันนี้เป็นการแข่งขันการเขียนโปรแกรมเพ่ือแก้โจทย์ปัญหาจากภาษา Java โดยการแข่งขันนี้เป็นการแข่งขันที่จัดขึ้นโดย คณะวิทยาศาสตร์ สาขาวิทยาการคอมพิวเตอร์ โดยเป็นการจัดการแข่งขันให้กับนักศีกษาชั้นปีที่ 1 - 4 ที่สนใจ"></span>
                 </p>
             </div>
         </div>
         <div class="activity-item">
             <img src="image/IMG_0400.JPG" alt="Activity Image" class="activity-image">
             <div class="activity-content">
-                <h2> SAS X KMITL Hackathon Competition Event 2nd </h2>
-                <p><strong>Position: </strong>Contestant</p>
-                <p><strong>Event Details: </strong>
-                    This is a competition related to data analysis and the development of Machine Learning models for future data prediction based on assigned tasks. 
+                <h2 data-en="SAS X KMITL Hackathon Competition Event 2nd" data-th="กิจกรรมการแข่งขัน SAS X KMITL Hackathon ครั้งที่ 2"></h2>
+                <p><strong data-en="Position: " data-th="ตำแหน่ง : "></strong> <span data-en="Contestant" data-th="ผู้เข้าร่วมการแข่งขัน"></span></p>
+                <p><strong data-en="Event Details: " data-th="รายละเอียดกิจกรรม : "></strong>
+                    <span data-en="This is a competition related to data analysis and the development of Machine Learning models for future data prediction based on assigned tasks. 
                     In this competition, SAS has provided a specific challenge: to predict and analyze customer calls for charitable donations. The net donation amount 
                     after deducting call expenses will be used as the score for judging. In this round, the gold medal criteria are set for donations exceeding 11 million dollars.
-                     SAS has prepared the necessary data for the competition, and the tool provided for use is SAS VIYA.</p>
+                     SAS has prepared the necessary data for the competition, and the tool provided for use is SAS VIYA."
+                     data-th="เป็นการแข่งขันที่เกี่ยวกับการวิเคราะห์และพัฒนาโมเดล Machine learning เพื่อการทำนายงานที่ได้รับ ในการแข่งขันนี้เป็นการทำนายโอกาสที่ลูกค้าจะบริจาคเงินในงานการกุศลเมื่อเรามีการติดต่อไป จำนวนเงินบริจาคสุทธิหลังจากหักค่าใช้จ่ายในการโทรจะถูกใช้เป็นคะแนนสำหรับการตัดสิน ในรอบนี้ เกณฑ์การได้รับเหรียญทองถูกกำหนดไว้สำหรับการบริจาคที่เกิน 11 ล้านดอลลาร์ "></span>
+                </p>
             </div>
         </div>
         <div class="activity-item">
             <img src="image/Cs connect.JPG" alt="Activity Image" class="activity-image">
             <div class="activity-content">
-                <h2>CS Connection Event</h2>
-                <p><strong>Position: </strong>Event Participant</p>
-                <p><strong>Event Details: </strong>
-                    his event is organized by the department and will feature alumni and various companies to share knowledge about different career paths of interest, aimed at benefiting students who are interested. Participation in the event is voluntary.
+                <h2 data-en="CS Connection Event" data-th="กิจกรรมCS Connection"></h2>
+                <p><strong data-en="Position: " data-th="ตำแหน่ง : "></strong> <span data-en="Event Participant" data-th="ผู้เข้าร่วมกิจกรรม"></span></p>
+                <p><strong data-en="Event Details: " data-th="รายละเอียดกิจกรรม : "></strong>
+                    <span data-en="his event is organized by the department and will feature alumni and various companies to share knowledge about different career paths of interest, aimed at benefiting students who are interested. Participation in the event is voluntary."
+                          data-th="เป็นงารที่จัดขึ้นโดยภาควิชาวิทยาการคอมพิวเตอร์ โดยจะเป็นการนำพี่ๆศิษย์เก่า หรือบริษัทต่างๆ มาแชร์ ประสบการณ์ความรู้เกี่ยวกับสายงานต่างๆตามความสนใจ โดยกิจกรรมนี้เป็นกิจกรรมที่จัดให้กับนักศึกษาทุกคนที่สนใจ"></span>
                 </p>
             </div>
         </div>
@@ -491,72 +515,92 @@
             <img src="image/IMG_9455.JPG" alt="Activity Image" class="activity-image">
             <div class="activity-content">
                 <h2>Sports for Relationship Building Event(กิจกรรม กีฬาสานสัมพันธ์ แคแสด)</h2>
-                <p><strong>Position: </strong>STAFF, Photographer</p>
-                <p><strong>Event Details: </strong>
-                    The event is organized to foster relationships among faculties, and between senior and junior students and peers, to promote unity, mutual support, and harmony. The activities aim to improve physical health, uplift spirits, and offer fun experiences, teaching participants to accept wins and losses and to forgive each other, embodying true sportsmanship. This event serves as a foundation for building good health and organizing creative activities, allowing all students to participate and interact positively, preparing them for effective teamwork in the future.
+                <p><strong data-en="Position: " data-th="ตำแหน่ง : "></strong> <span data-en="STAFF, Photographer" data-th="STAFF, ช่างภาพ"></span></p>
+                <p><strong data-en="Event Details: " data-th="รายละเอียดกิจกรรม : "></strong>
+                   <span data-en="The event is organized to foster relationships among faculties, and between senior and junior students and peers, to promote unity, mutual support, and harmony. The activities aim to improve physical health, uplift spirits, and offer fun experiences, teaching participants to accept wins and losses and to forgive each other, embodying true sportsmanship. This event serves as a foundation for building good health and organizing creative activities, allowing all students to participate and interact positively, preparing them for effective teamwork in the future."
+                         data-th="เป็นการจัดกิจกรรมเพื่อสานสัมพันธ์กันระหว่างคณะ และนิสิตรุ่นพี่รุ่นน้องและเพื่อนร่วมสถาบันให้เกิดความสามัคคีกลมเกลียว ช่วยเหลือเกื้อกูล และปองดองซึ่งกันและกัน ซึ่งกิจกรรมนี้ส่งเสริมทำให้ร่างกายแข็งแรง จิตใจร่าเริง สนุกสนาน รู้แพ้ รู้ชนะ และให้อภัยต่อกัน อย่างที่เรียกได้ว่ามีน้ำใจนักกีฬา ซึ่งกิจกรรมนี้เป็นจุดเริ่มต้นของการเสริมสร้างพลานามัยที่ดีและจัดกิจกรรมสร้างสรรค์ให้นิสิตนักศึกษาทุกคนได้มีกิจกรรมร่วมกัน มีปฏิสัมพันธ์ที่ดีระหว่างกัน เพื่อรองรับการทำงานร่วมกันอย่างมีประสิทธิภาพในอนาคต">
+                   </span>
                 </p>
             </div>
         </div>
         <div class="activity-item">
             <img src="image/IMG_6618.JPG" alt="Activity Image" class="activity-image">
             <div class="activity-content">
-                <h2>Botnoi Hackathon Competition Event</h2>
-                <p><strong>Position: </strong>STAFF, Photographer</p>
-                <p><strong>Event Details: </strong>
-                    Botnoi OpenAI HackFest is a competition seeking teams of developers who can best apply AI to solve business challenges. Winners receive exclusive rights, opportunities to further develop their ideas, and support from leading partners and companies in Thailand.
+                <h2 data-en="Botnoi Hackathon Competition Event" data-th="กิจกรรมการแข่งขัน Botnoi Hackathon"></h2>
+                <p><strong data-en="Position: " data-th="ตำแหน่ง : "></strong><span data-en="STAFF, Photographer" data-th="STAFF, ช่างภาพ"></span></p>
+                <p><strong data-en="Event Details: " data-th="รายละเอียดกิจกรรม : "></strong>
+                    <span data-en="Botnoi OpenAI HackFest is a competition seeking teams of developers who can best apply AI to solve business challenges. Winners receive exclusive rights, opportunities to further develop their ideas, and support from leading partners and companies in Thailand."
+                          data-th="Botnoi OpenAI HackFest เป็นการแข่งขันที่เฟ้นหาทีมนักพัฒนาที่สามารถนำ AI มาแก้ปัญหาทางธุรกิจได้ดีที่สุด ผู้ชนะจะได้รับสิทธิ์แต่เพียงผู้เดียว โอกาสในการพัฒนาแนวคิดของตนเอง และการสนับสนุนจากพันธมิตรและบริษัทชั้นนำในประเทศไทย"></span>
                 </p>
             </div>
         </div>
         <div class="activity-item">
             <img src="image/IMG_2673.JPG" alt="Activity Image" class="activity-image">
             <div class="activity-content">
-                <h2>SAS X KMITL Hackathon Competition Event 3rd</h2>
-                <p><strong>Position: </strong>Contestant</p>
-                <p><strong>Event Details: </strong>
-                    This is a competition related to data analysis and the development of Machine Learning models for future data prediction based on assigned tasks. 
+                <h2 data-en="SAS X KMITL Hackathon Competition Event 3nd" data-th="กิจกรรมการแข่งขัน SAS X KMITL Hackathon ครั้งที่ 3"></h2>
+                <p><strong data-en="Position: " data-th="ตำแหน่ง : "></strong> <span data-en="Contestant" data-th="ผู้เข้าร่วมการแข่งขัน"></span></p>
+                <p><strong data-en="Event Details: " data-th="รายละเอียดกิจกรรม : "></strong>
+                    <span data-en="This is a competition related to data analysis and the development of Machine Learning models for future data prediction based on assigned tasks. 
                     In this competition, SAS has provided a specific challenge: to predict and analyze customer calls for charitable donations. The net donation amount 
                     after deducting call expenses will be used as the score for judging. In this round, the gold medal criteria are set for donations exceeding 12 million dollars.
-                     SAS has prepared the necessary data for the competition, and the tool provided for use is SAS VIYA.</p>
+                     SAS has prepared the necessary data for the competition, and the tool provided for use is SAS VIYA."
+                     data-th="เป็นการแข่งขันที่เกี่ยวกับการวิเคราะห์และพัฒนาโมเดล Machine learning เพื่อการทำนายงานที่ได้รับ ในการแข่งขันนี้เป็นการทำนายโอกาสที่ลูกค้าจะบริจาคเงินในงานการกุศลเมื่อเรามีการติดต่อไป จำนวนเงินบริจาคสุทธิหลังจากหักค่าใช้จ่ายในการโทรจะถูกใช้เป็นคะแนนสำหรับการตัดสิน ในรอบนี้ เกณฑ์การได้รับเหรียญทองถูกกำหนดไว้สำหรับการบริจาคที่เกิน 12 ล้านดอลลาร์ "></span>
+                </p>
             </div>
         </div>
     </div>
     <br/>
     <div id="internship" class="internship-experience">
-        <h2 class="title" style="text-align: center; color: #0056b3;">Internship Experience</h2>
+        <h2 class="title" style="text-align: center; color: #0056b3;" data-en="Internship Experience" data-th="ประสบการณ์การฝึกงาน"></h2>
         <div class="experience-detail">
             <img src="image/botnoi_logo.jpg" alt="experience Image" class="experience-image">
             <div class="experience-description">
                 <h2> BOTNOI CONSULTING COMPANY LIMITED. </h2>
-                <p><strong>Internship Position : </strong>Data Scientist </p>
-                <p><strong>Internship Duration : </strong>May - Jun 2023</p>
-                <p><strong>Internship Details : </strong>
+                <p><strong data-en="Internship Position :" data-th="ตำแหน่งการฝึกงาน : "></strong>Data Scientist </p>
+                <p><strong data-en="Internship Duration : " data-th="ระยะเวลาการฝึกงาน : "></strong>May - Jun 2023</p>
+                <p><strong data-en="Internship Details :" data-th="รายละเอียดการฝึกงาน"> </strong>
                     <ul>
-                        <li>Analyzed errors in voices generated by Botnoi voice to improve the model for voice creation.</li>
-                        <li>Analyzed customer data from the company's Chatbot usage to identify usage trends or customer needs.</li>
-                        <li>Performed image editing and data transformation for training Machine Learning models to classify dog and cat breeds.</li>
+                        <li data-en="Analyzed errors in voices generated by Botnoi voice to improve the model for voice creation." data-th="วิเคราะห์ปัญหาและความผิดพลาดเกี่ยวกับเสียงที่ Botnoi voice สร้างขึ้นมาเพื่อแก้ไขปัญหานั้นๆ"></li>
+                        <li data-en="Analyzed customer data from the company's Chatbot usage to identify usage trends or customer needs." data-th="วิเคราะห์ความต้องการของลูกค้า จาก Chatbot ที่เขาพูดคุยว่าลูกค้าที่มาใช้งานต้องการเรื่องอะไรบ้าง"></li>
+                        <li data-en="Performed image editing and data transformation for training Machine Learning models to classify dog and cat breeds." data-th="ทำการพัฒนาโมเดลสำหรับจำแนกสายพันธุ์หมาแมว โดยมีขั้นตอนกาารเตรียมข้อมูลรูปภาพ และ การแปลงข้อมูลรูปภาพเป็นเวคเตอร์"></li>
                     </ul>
                 </p>
             </div>
             <div class="certification-button">
-                <a href="Doc/IBN TN 014 ศิริรัฐ  .pdf" target="_blank" class="btn">View Internship Certification</a>
+                <a href="Doc/IBN TN 014 ศิริรัฐ  .pdf" target="_blank" class="btn" data-en="View Internship Certification" data-th="ดูหนังสือรับรองการทำงาน"></a>
             </div>
         </div>
     </div>
     <br/>
 
-    <h2 id="portfolio" style="text-align: center; color: #0056b3;">Additional Courses</h2>
+    <h2 id="portfolio" style="text-align: center; color: #0056b3;" data-en="Additional Courses" data-th="คอร์สเรียนอื่นๆ"></h2>
     <div  class="portfolio-section">
         <div class="portfolio" onclick="this.classList.toggle('is-flipped')">
             <div class="portfolio-inner">
                 <div class="portfolio-front">
                     <img src="image/fun_with_data.png" alt="Certificate">
                     <h2>Fun With Data Science</h2>
-                    <button>Details</button>
+                    <button data-en="Details" data-th="รายละเอียด"></button>
                 </div>
                 <div class="portfolio-back"  >
-                    <h2>Details</h2>
-                    <p>
-                        "Fun with Data Science" is a free course that lays the foundation for working in the field of data science. It covers basics from data preparation, data analysis, machine learning, text classification, image classification, to an introduction to big data. This course has been developed by a technology institute and is open for free to anyone interested in learning.
+                    <h2 data-en="Details" data-th="รายละเอียด"></h2>
+                    <p data-en='"Fun with Data Science" is a free course that lays the foundation for working in the field of data science. It covers basics from data preparation, data analysis, machine learning, text classification, image classification, to an introduction to big data. This course has been developed by a technology institute and is open for free to anyone interested in learning.'
+                        data-th='"Fun with Data Science" เป็นคอร์สฟรีที่จะปูพื้นฐานการทำงานด้าน Data Science โดยจะเรียนรู้ตั้งแต่การเตรียมความพร้อมของข้อมูล, การวิเคราะห์ข้อมูล, Machine learning, text classification, image classification ไปจนถึงพื้นฐานของ Big data โดยคอร์สนี้ทาง สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง เปิดให้ผู้ที่สนใจเรียนรู้ได้ฟรี '>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio" onclick="this.classList.toggle('is-flipped')">
+            <div class="portfolio-inner">
+                <div class="portfolio-front">
+                    <img src="image/Sap.png" alt="Certificate">
+                    <h2>ASEAN Data Science Explorers 2024</h2>
+                    <button data-en="Details" data-th="รายละเอียด"></button>
+                </div>
+                <div class="portfolio-back"  >
+                    <h2 data-en="Details" data-th="รายละเอียด"></h2>
+                    <p data-en="ASEAN Data Science Explorers 2024 is a short training program on using SAP Analytics Cloud to analyze data and find insights, and SAP Build Apps for creating simple applications using code boxes."
+                        data-th="ASEAN Data Science Explorers 2024 เป็นการอบรมการใช้โปรแกรม SAP Analytics Cloud ในการวิเคราะห์ข้อมูลเพื่อหาความสัมพันธ์หรือข้อมูลเชิงลึก ของข้อมูล และ การใช้ SAP Bulid Apps เพื่อการสร้างแอปพลิเคชันอย่างง่ายโดยใช้ code box">
                     </p>
                 </div>
             </div>
@@ -565,7 +609,7 @@
 
     <br/>
     <section id="contact">
-        <h2 id="contact" style="text-align: center; color: #0056b3;">Contact Me</h2>
+        <h2 id="contact" style="text-align: center; color: #0056b3;" data-en="Contact Me" data-th="ติดต่อ"></h2>
         <div class="contact-info">
             <p>Email: <a href="mailto:siriratsanghkao@gmail.com">siriratsanghkao@gmail.com</a></p>
             <p>Phone: <a href="tel:0927483260">0927483260</a></p>
@@ -581,7 +625,7 @@
     </section>
       
     <footer>
-        <p>&copy; 2023 Sirirat Sanghkao. All rights reserved.</p>
+        <p>&copy; 2024 Sirirat Sanghkao. All rights reserved.</p>
     </footer>
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
@@ -667,6 +711,30 @@
                 observer.observe(item);
             });
         });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var selectedLanguage = localStorage.getItem('selectedLanguage') || 'en'; // ตั้งค่าเริ่มต้นเป็น 'en' หากไม่มีการเลือกภาษาก่อนหน้า
+            changeLanguage(selectedLanguage);
+        });
+
+            document.getElementById('languageButton').addEventListener('click', function() {
+            var btn = document.getElementById('languageButton');
+            if (btn.innerText === "EN") {
+                btn.innerText = "TH";
+                changeLanguage('en');
+            } else {
+                btn.innerText = "EN";
+                changeLanguage('th');
+            }
+            });
+
+        function changeLanguage(lang) {
+            document.querySelectorAll("[data-en], [data-th]").forEach(el => {
+                el.innerText = el.dataset[lang];
+        });
+        localStorage.setItem('selectedLanguage', lang);
+}
+
         
 
 

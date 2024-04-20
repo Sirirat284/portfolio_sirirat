@@ -13,13 +13,15 @@
             <h4 style="display: inline; color: white;">Mr. Sirirat Sanghkao</h4>
         </div>
         <nav style="display: flex; margin-right: 150px;">
-            <a href="index.html#home" style="color: white; margin-right: 10px; text-decoration: none;">Home</a>
-            <a href="index.html#about" style="color: white; margin-right: 10px; text-decoration: none;">Profile</a>
-            <a href="index.html#portfolio" style="color: white; text-decoration: none;  margin-right: 10px;">Competitions</a>
-            <a href="index.html#projects" style="color: white; text-decoration: none;  margin-right: 10px;">Projects</a>
-            <a href="index.html#activity" style="color: white; text-decoration: none; margin-right: 10px;">Activities</a>
-            <a href="index.html#internship" style="color: white; text-decoration: none; margin-right: 10px;">Internship</a>
-            <a href="index.html#contact" style="color: white; text-decoration: none; margin-right: 10px;">Contact</a>
+            <a href="index.html#home" style="color: white; margin-right: 10px; text-decoration: none;" data-en="Home" data-th="หน้าหลัก"></a>
+            <a href="index.html#about" style="color: white; margin-right: 10px; text-decoration: none;" data-en="Profile" data-th="ข้อมูลส่วนตัว"></a>
+            <a href="index.html#portfolio" style="color: white; text-decoration: none; margin-right: 10px;" data-en="Competitions" data-th="ผลงานการแข่งขัน"></a>
+            <a href="index.html#projects" style="color: white; text-decoration: none; margin-right: 10px;" data-en="Projects" data-th="ผลงานโปรเจค"></a>
+            <a href="index.html#activity" style="color: white; text-decoration: none; margin-right: 10px;" data-en="Activities" data-th="กิจกรรม"></a>
+            <a href="index.html#internship" style="color: white; text-decoration: none; margin-right: 10px;" data-en="Internship" data-th="การฝึกงาน"></a>
+            <a href="index.html#contact" style="color: white; text-decoration: none; margin-right: 10px;" data-en="Contact" data-th="ติดต่อ"></a>
+            <!-- เพิ่มปุ่ม Language ที่นี่ -->
+            <button id="languageButton" style="margin-left: 20px; background-color: #ff9d1d; color: white; border: none; cursor: pointer; padding: 10px 20px; border-radius: 20px; font-size:90%;">TH</button>
         </nav>
     </header> 
     <!-- <header>
@@ -27,7 +29,7 @@
     </header> -->
 
     <section class="project-details">
-        <h2>Restaurant and Food Menu Recommendation System</h2>
+        <h2 data-en="Restaurant and Food Menu Recommendation System" data-th="ระบบแนะนำร้านอาหารและเมนูอาหาร"></h2>
         <div class="slider">
             <div class="slides">
                 <div class="slide"><img src="image/restaurant1.png" alt="Image 1"></div>
@@ -44,39 +46,45 @@
                 <!-- เพิ่ม span สำหรับแต่ละรูปภาพ -->
             </div>
         </div>
-        <h2>Project Name</h2>
-        <p>Restaurant and Food Menu Recommendation System</p>
-        <h2>Project Details</h2>
-        <p>
-            Create a web application to display all the restaurants within a university campus to solve the problem for outsiders who come for business and do not know what restaurants are available, or for students who are unaware of the dining options on campus. Users should be able to filter restaurants based on their preferences, such as à la carte restaurants, noodle shops, etc., or by religion, like Halal restaurants, which are scarce within the university. The system will show the name, location, and menu of each restaurant, allowing users to make informed decisions, including the ratings of each restaurant.
+        <h2 data-en="Project Name" data-th="ชื่อโปรเจค"></h2>
+        <p data-en="Restaurant and Food Menu Recommendation System" data-th="ระบบแนะนำร้านอาหารและเมนูอาหาร"></p>
+        <h2 data-en="Project Details" data-th="รายละเอียดโปรเจค"></h2>
+        <p data-en="Create a web application to display all the restaurants within a university campus to solve the problem for outsiders who come for business and do not know what restaurants are available, or for students who are unaware of the dining options on campus. Users should be able to filter restaurants based on their preferences, such as à la carte restaurants, noodle shops, etc., or by religion, like Halal restaurants, which are scarce within the university. The system will show the name, location, and menu of each restaurant, allowing users to make informed decisions, including the ratings of each restaurant."
+            data-th="เป็นการสร้างเว็บแอปพลิเคชั่น เพื่อแสดงร้านอาหารทั้งหมดในมหาวิทยาลัย เพื่อแก้ไขปัญหาเรื่องคนที่มาติดต่อธุระหรือมาเข้าร่วมกิจกรรมในมหาวิทยาลัย ไม่ทราบว่ามีร้านอาหารอะไรภายในมหาลัยบ้าง หรือสำหรับนักศึกษาที่เข้ามาศึกษาใหม่และไม่ทราบ โดยที่เว็บแอปพลิเคชั่นนี้สามารถเลือกฟิวเตอร์ประเภทร้านอาหารได้ เช่น ร้านอาหารตามสั่ง ร้านก๋วยเตี๋ยว หรือว่าจะเป็นร้านอาหารฮาลาลสำหรับชาวมุสลิม ที่มีร้านน้อยมากในมหาวิทยาลัย โดยระบบจะแสดงชื่อ สถานที่ตั้ง เมนูภายในร้าน ทำให้ผู้ใช้สามารถตัดสินใจก่อนได้ และยังมีการให้คะแนนอาหารของแต่ละร้านเพื่อเพิ่มความน่าสนใจให้กับรายการอาหาร">     
         </p>
-        <h2>Roles and Project Work Details</h2>
-        <p class="work-details"><strong style="color: #ee7700;">Role : </strong>  Backend Developer </p>
+        <h2 data-en="Roles and Project Work Details" data-th="ตำแหน่งและรายละเอียดการทำงาน"></h2>
+        <p class="work-details"><strong style="color: #ee7700;"  data-en="Role : " data-th="ตำแหน่ง : " ></strong>  Backend Developer </p>
         <p class="work-details">
-            <strong style="color: #ee7700;">Work Details:</strong>
+            <strong style="color: #ee7700;" data-en="Work Details: " data-th="รายละเอียดการทำงาน"></strong>
             <ol>
-                <li>Led the project and designed the system, including use case diagrams, sequence diagrams, and activity diagrams.</li>
-                <li>Designed the database using ER diagrams.</li>
-                <li>Created a database for data storage using SQL language.</li>
-                <li>Developed the backend system including selection, search, and filtering functions, such as filtering stores that received 5 stars, based on the requirements from the frontend.</li>
-                <li>Designed advertising posters.</li>
-                <li>Provided support for backend tasks.</li>
+                <li data-en="Led the project and designed the system, including use case diagrams, sequence diagrams, and activity diagrams."
+                    data-th="เป็นผู้คิดหัวข้อโปรเจค และ ออกแบบระบบ รวมไปถึงการออกแบบ use case diagrams,  sequence diagrams และ activity diagrams"></li>
+                <li data-en="Designed the database using ER diagrams."
+                    data-th="ออกแบบ ER Diagrams สำหรับ Database "></li>
+                <li data-en="Created a database for data storage using SQL language."
+                    data-th="สร้าง Database สำหรับจัดเก็บข้อมูลด้วย ภาษา SQL"></li>
+                <li data-en="Developed the backend system including selection, search, and filtering functions, such as filtering stores that received 5 stars, based on the requirements from the frontend."
+                    data-th="พัฒนาระบบหลังบ้าน(Backend) โดยมีระบบเลือกแสดงผลข้อมูลต่าง ๆ, ค้นหา, ตัวกรอง(filtering) เช่น กรองร้านอาหารที่ได้รับ 5 ดาว และ ระบบที่ฝั่งหน้าบ้าน (frontend) ต้อง"></li>
+                <li data-en="Designed advertising posters."
+                    data-th="ออกแบบป้ายโฆษณา"></li>
+                <li data-en="Provided support for backend tasks."
+                    data-th="สนับสนุนการทำงานฝั่งหลังบ้าน (Backend)"></li>
             </ol>
         </p>
 
-        <h2>Tools</h2>
+        <h2 data-en="Tools" data-th="เครื่องมือที่ใช้"></h2>
         <ul>
             <li>TailwindCSS</li>
             <!-- เพิ่มเทคโนโลยีอื่นๆ ที่ใช้ -->
         </ul>
-        <h2>Programming Languages</h2>
+        <h2 data-en="Programming Languages" data-th="ภาษาโปรแกรมที่ใช้ในการพัฒนาโปรเจค"></h2>
         <ul>
             <li>Next JS</li>
             <li>Node JS</li>
             <li>SQL</li>
             <!-- เพิ่มเทคโนโลยีอื่นๆ ที่ใช้ -->
         </ul>
-        <h2>Programs</h2>
+        <h2 data-en="Programs" data-th="โปรแกรมที่ใช้ใรการพัฒนาโปรเจค"></h2>
         <ul>
             <li>VS CODE</li>
             <li>POSTMAN</li>
@@ -123,6 +131,28 @@
         slides[slideIndex-1].style.display = "block";
         dots[slideIndex-1].className += " active";
         }
+        document.addEventListener('DOMContentLoaded', function() {
+            var selectedLanguage = localStorage.getItem('selectedLanguage') || 'en'; // ตั้งค่าเริ่มต้นเป็น 'en' หากไม่มีการเลือกภาษาก่อนหน้า
+            changeLanguage(selectedLanguage);
+        });
+
+            document.getElementById('languageButton').addEventListener('click', function() {
+            var btn = document.getElementById('languageButton');
+            if (btn.innerText === "EN") {
+                btn.innerText = "TH";
+                changeLanguage('en');
+            } else {
+                btn.innerText = "EN";
+                changeLanguage('th');
+            }
+            });
+
+        function changeLanguage(lang) {
+            document.querySelectorAll("[data-en], [data-th]").forEach(el => {
+                el.innerText = el.dataset[lang];
+        });
+        localStorage.setItem('selectedLanguage', lang);
+        } 
     </script>
 </body>
 </html>
