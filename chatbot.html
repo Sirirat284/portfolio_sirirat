@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Details</title>
     <link rel="stylesheet" href="css/style_project.css"> <!-- หากมีไฟล์ CSS แยก -->
+    <style>
+        .responsive-iframe {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* Aspect ratio */
+            height: 0;
+        }
+        .responsive-iframe iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
 </head>
 <body>
     <header >
@@ -86,8 +102,9 @@
         </ul>
 
         <h2 data-en="Demo" data-th="ตัวอย่างการทำงาน"></h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/XXUDpKuLOA4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+        <div class="responsive-iframe">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XXUDpKuLOA4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
         <h2>Source Code</h2>
         <a href="https://github.com/wanglingx/python-api-chatbotAI-2565-1" target="_blank"> GitHub Repository</a>
     </section>

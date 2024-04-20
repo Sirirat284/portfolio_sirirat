@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Details</title>
     <link rel="stylesheet" href="css/style_project.css"> <!-- หากมีไฟล์ CSS แยก -->
+    <style>
+        .responsive-iframe {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* Aspect ratio */
+            height: 0;
+        }
+        .responsive-iframe iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
     <header >
@@ -108,9 +123,9 @@
         <a href="https://medium.com/@DodoSirirat/image-classification-108ebbb19514" target="_blank">Medium</a>
 
         <h2 data-en=" Work Explanation Video Link" data-th="วิดีโออธิบายการทำงาน"></h2>
-        <!-- <a href="https://youtu.be/AZqI-l4UJxo" target="_blank">Youtube</a> -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/AZqI-l4UJxo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    
+        <div class="responsive-iframe">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/AZqI-l4UJxo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </section>
 
     <footer>
