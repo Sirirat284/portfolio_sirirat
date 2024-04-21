@@ -13,13 +13,15 @@
             <h4 style="display: inline; color: white;">Mr. Sirirat Sanghkao</h4>
         </div>
         <nav style="display: flex; margin-right: 150px;">
-            <a href="index.html#home" style="color: white; margin-right: 10px; text-decoration: none;">Home</a>
-            <a href="index.html#about" style="color: white; margin-right: 10px; text-decoration: none;">Profile</a>
-            <a href="index.html#portfolio" style="color: white; text-decoration: none;  margin-right: 10px;">Competitions</a>
-            <a href="index.html#projects" style="color: white; text-decoration: none;  margin-right: 10px;">Projects</a>
-            <a href="index.html#activity" style="color: white; text-decoration: none; margin-right: 10px;">Activities</a>
-            <a href="index.html#internship" style="color: white; text-decoration: none; margin-right: 10px;">Internship</a>
-            <a href="index.html#contact" style="color: white; text-decoration: none; margin-right: 10px;">Contact</a>
+            <a href="index.html#home" style="color: white; margin-right: 10px; text-decoration: none;" data-en="Home" data-th="หน้าหลัก"></a>
+            <a href="index.html#about" style="color: white; margin-right: 10px; text-decoration: none;" data-en="Profile" data-th="ข้อมูลส่วนตัว"></a>
+            <a href="index.html#portfolio" style="color: white; text-decoration: none; margin-right: 10px;" data-en="Competitions" data-th="ผลงานการแข่งขัน"></a>
+            <a href="index.html#projects" style="color: white; text-decoration: none; margin-right: 10px;" data-en="Projects" data-th="ผลงานโปรเจค"></a>
+            <a href="index.html#activity" style="color: white; text-decoration: none; margin-right: 10px;" data-en="Activities" data-th="กิจกรรม"></a>
+            <a href="index.html#internship" style="color: white; text-decoration: none; margin-right: 10px;" data-en="Internship" data-th="การฝึกงาน"></a>
+            <a href="index.html#contact" style="color: white; text-decoration: none; margin-right: 10px;" data-en="Contact" data-th="ติดต่อ"></a>
+            <!-- เพิ่มปุ่ม Language ที่นี่ -->
+            <button id="languageButton" style="margin-left: 20px; background-color: #ff9d1d; color: white; border: none; cursor: pointer; padding: 10px 20px; border-radius: 20px; font-size:90%;">TH</button>
         </nav>
     </header> 
     <!-- <header>
@@ -27,13 +29,14 @@
     </header> -->
 
     <section class="project-details">
-        <h2>Court Verdict Classification and Prediction in Thai Juvenile and Family Courts </h2>
+        <h2 data-en="Court Verdict Classification and Prediction in Thai Juvenile and Family Courts "
+            data-th="การพัฒนาโมเดลทำนายและจำแนกโทษของศาลเยาวชนและครอบครัว"></h2>
         <div class="slider">
             <div class="slides">
-                <div class="slide"><img src="image/senoirproject.png" alt="Image 1"></div>
-                <div class="slide"><img src="image/bert.png" alt="Image 2"></div>
-                <div class="slide"><img src="image/bi.png" alt="Image 3"></div>
-                <div class="slide"><img src="image/cnn.png" alt="Image 4"></div>
+                <div class="slide"><img src="image/senoir-1.png" alt="Image 1"></div>
+                <div class="slide"><img src="image/senoir-2.png" alt="Image 2"></div>
+                <div class="slide"><img src="image/senoir-3.png" alt="Image 3"></div>
+                <div class="slide"><img src="image/senoir-4.png" alt="Image 4"></div>
                 <!-- เพิ่มรูปภาพเพิ่มเติมตามต้องการ -->
             </div>
             <div style="text-align:center">
@@ -44,27 +47,35 @@
                 <!-- เพิ่ม span สำหรับแต่ละรูปภาพ -->
             </div>
         </div>
-        <h2>Project Name</h2>
+        <h2 data-en="Project Name" data-th="ชื่อโปรเจค"></h2>
         <p>Court Verdict Classification and Prediction in Thai Juvenile and Family Courts(การพัฒนาโมเดลทำนายและจำแนกโทษของศาลเยาวชน และครอบครัว)</p>
-        <h2>Project Details</h2>
-        <p>The project involves developing a classification and prediction system model for offenders based on unstructured data from interdisciplinary committee reports, which include opinions from various experts such as child psychologists or social workers. These reports significantly influence judges' decisions. The data used is in textual form and consists of unstructured data. The developed model aims to reduce the court's case deliberation time, decrease the emotional stress and dissatisfaction of victims, and mitigate legal risks due to changes in laws or regulations related to the offenders' cases. Four models were experimented with for prediction purposes: 1. CNN, 2. Bi-GRU, 3. BERT, and 4. WangchanBERTa.
+        <h2 data-en="Project Details" data-th="รายละเอียดโปรเจค"></h2>
+        <p  data-en="Currently, the number of juvenile delinquency cases exceeds 10,000 per year, highlighting the need for a swift and fair judicial system. Juvenile and family courts often require six to twelve months, or longer, to adjudicate cases depending on the case load and complexity. This delay can have various adverse effects on the youth and society. To address this issue, this project has developed and tested models for predicting or classifying sentences in juvenile courts. Models such as MLP, CNN, BERT, and WangChanBERTa were specifically tailored for use in juvenile courts, utilizing real-case data fully adjudicated with 64 features across three categories: numerical data, categorical data, and textual data. Techniques included statistical methods on numerical and categorical data, and text data preprocessing on textual data. The goal was to develop models capable of accurately predicting case outcomes. Experimental results showed that the Multilayer Perceptron (MLP), trained on these data, provided the best performance compared to other models and past research, with an accuracy of 79% and an F-1 score of 78%. This demonstrates the potential for real-world application to reduce the workload of courts or lawyers, expedite judicial processes, and enhance the confidence in judges' rulings. However, there are still limitations and challenges that need to be addressed in the future to fully leverage these technologies in the justice system."
+            data-th="ปัจจุบันคดีความของเด็กและเยาวชนที่กระทำความผิดมีจำนวนมากกว่า 10,000 คดีต่อปี ซึ่งสะท้อนให้เห็นถึงความจำเป็นในการมีระบบการตัดสินที่รวดเร็วและเป็นธรรม เนื่องจากศาลเยาวชนและครอบครัวต้องใช้เวลานานในการตัดสินคดี บางครั้งอาจนานถึง 6-12 เดือนหรือนานกว่านั้น ขึ้นอยู่กับจำนวนคดีและรูปคดี ซึ่งอาจทำให้เกิดผลกระทบหลายด้านต่อเยาวชนและสังคม เพื่อแก้ไขปัญหาดังกว่า โปรเจคนี้ได้พัฒนาและทดสอบโมเดลที่ใช้ในการทำนายหรือจำแนกโทษในศาลเด็กและเยาวชน ได้แก่ MLP CNN BERT และ WangChanBERTa เพื่อใช้งานในศาลเด็กและเยาวชนโดยเฉพาะ โดยใช้ข้อมูลคดีจริงที่ถูกตัดสินครบทั้งกระบวนการจำนวน 64 คุณลักษณะประกอบไปด้วย 3 ประเภท ได้แก่ ข้อมูลตัวเลข ข้อมูลเชิงกลุ่ม และ ข้อมูลตัวอักษร โดยใช้ เทคนิคการเตรียมข้อมูลและวิธีทางสถิติบนข้อมูลตัวเลขและข้อมูลเชิงกลุ่ม เเละ การเตรียมข้อมูลประเภทข้อความบนข้อมูลตัวอักษร เพื่อพัฒนาโมเดลที่สามารถทำนายผลลัพธ์ของคดีได้แม่นยำ จากผลการทดลองพบว่าโมเดล Mutilayer Percepton (MLP) ที่นำมาฝึกสอนบนข้อมูลที่ให้ผลลัพธ์ที่ดีที่สุด เมื่อเทียบกับโมเดลและการทดลองอื่นๆในงานวิจัยในอดีต ด้วยค่า Accuracy 79% และ F-1 score 78% แสดงให้เห็นถึงศักยภาพในการใช้งานจริงเพื่อช่วยลดภาระงานของศาลหรือทนายความ เร่งกระบวนการตัดสิน และส่งเสริมความมั่นใจในคำตัดสินของผู้พิพากษา อย่างไรก็ตาม ยังมีข้อจำกัดและความท้าทายที่ต้องได้รับการแก้ไขในอนาคต เพื่อให้เทคโนโลยีเหล่านี้สามารถใช้งานได้อย่างเต็มศักยภาพในระบบยุติธรรม">
         </p>
-        <h2>Roles and Project Work Details</h2>
-        <p class="work-details"><strong style="color: #ee7700;">Role : </strong> Project Research Developer </p>
+        <h2 data-en="Roles and Project Work Details" data-th="ตำแหน่งและรายละเอียดการทำงาน"></h2>
+        <p class="work-details"><strong style="color: #ee7700;"  data-en="Role : " data-th="ตำแหน่ง : " ></strong> <span data-en="Project Research Developer" data-th="นักพัฒนาโครงการวิจัย"></span> </p>
         <p class="work-details">
-            <strong style="color: #ee7700;">Work Details:</strong>
+            <strong style="color: #ee7700;" data-en="Work Details: " data-th="รายละเอียดการทำงาน"></strong>
             <ol>
-                <li>Studied each column of data received from the juvenile and family court.</li>
-                <li>Merged the received data.</li>
-                <li>Performed preliminary data analysis to identify data preparation processes for each type of data.</li>
-                <li>Prepared the data with steps including 4.1 data cleaning, 4.2 data transformation, 4.3 selecting important data.</li>
-                <li>Prepared text data by 5.1 correcting spelling errors, 5.2 removing punctuation and special characters, 5.3 eliminating stop words.</li>
-                <li>Transformed text using methods like Bag of Words, Word2Vec, and TF-IDF.</li>
-                <li>Trained models with the data to find the best model for prediction.</li>
+                <li data-en="Studied each column of data received from the juvenile and family court."
+                    data-th="ศึกษาข้อมูลแต่ละ column ที่ได้จากศาลเยาวชนและครอบครัว"></li>
+                <li data-en="Merged the received data."
+                    data-th="รวมข้อมูลที่ได้รับมาจาก 2 ไฟล์"></li>
+                <li data-en="Performed preliminary data analysis to identify data preparation processes for each type of data."
+                    data-th="วิเคราะห์ข้อมูลเบื้องต้น เพื่อหาวิธีการเตรียมความพร้อมของข้อมูล ในแต่ละประเภทของข้อมูล"></li>
+                <li data-en="Prepared the data with steps including 4.1 data cleaning, 4.2 data transformation, 4.3 selecting important data."
+                    data-th="เตรียมข้อมูลโดยมีขั้นตอนต่างๆ ได้แก่ 4.1 ทำความสะอาดข้อมูล 4.2 แปลงข้อมูล 4.3 เลือกข้อมูลที่สำคัญที่ส่งผลกับโมเดล"></li>
+                <li data-en="Prepared text data with the following steps: 5.1 Corrected various spelling errors, 5.2 Removed special characters from the text, 5.3 Eliminated stop words from the text."
+                    data-th="เตรียมข้อมูลประเภทข้อความ โดยมีขั้นตอนดังนี้ 5.1 แก้ไขข้อมูลคำผิดต่างๆ 5.2 ลบอักขระพิเศษจากข้อความ 5.3 ลบ Stop word จากข้อความ"></li>
+                <li data-en="Transformed text using methods like Bag of Words, Word2Vec, TF-IDF and mUSE."
+                    data-th="แปลงข้อความด้วยเทคนิค Bag of word, Word2Ver, TF-IDF และ mUSE"></li>
+                <li data-en="Trained MLP, CNN, BERT, and Wangchan models to identify the most accurate predictive model."
+                    data-th="ฝึกสอนโมเดล MLP, CNN, BERT, Wangchan เพื่อค้นหาโมเดลที่ทำนายผลได้แม่่นยำที่สุด"></li>
             </ol>
         </p>
 
-        <h2>Tools</h2>
+        <h2 data-en="Tools" data-th="เครื่องมือที่ใช้"></h2>
         <ul>
             <li>Google colab</li>
             <li>Tableau</li>
@@ -76,7 +87,7 @@
             <li>matplotlib</li>
             <!-- เพิ่มเทคโนโลยีอื่นๆ ที่ใช้ -->
         </ul>
-        <h2>Programming Languages</h2>
+        <h2 data-en="Programming Languages" data-th="ภาษาโปรแกรมที่ใช้ในการพัฒนาโปรเจค"></h2>
         <ul>
             <li>Python</li>
             <!-- เพิ่มเทคโนโลยีอื่นๆ ที่ใช้ -->
@@ -90,7 +101,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2023 Sirirat Sanghkao. All rights reserved.</p>
+        <p>&copy; 2024 Sirirat Sanghkao. All rights reserved.</p>
     </footer>
     <script>
       let slideIndex = 1;
@@ -122,6 +133,28 @@
         slides[slideIndex-1].style.display = "block";
         dots[slideIndex-1].className += " active";
         }
+        document.addEventListener('DOMContentLoaded', function() {
+            var selectedLanguage = localStorage.getItem('selectedLanguage') || 'en'; // ตั้งค่าเริ่มต้นเป็น 'en' หากไม่มีการเลือกภาษาก่อนหน้า
+            changeLanguage(selectedLanguage);
+        });
+
+            document.getElementById('languageButton').addEventListener('click', function() {
+            var btn = document.getElementById('languageButton');
+            if (btn.innerText === "EN") {
+                btn.innerText = "TH";
+                changeLanguage('en');
+            } else {
+                btn.innerText = "EN";
+                changeLanguage('th');
+            }
+            });
+
+        function changeLanguage(lang) {
+            document.querySelectorAll("[data-en], [data-th]").forEach(el => {
+                el.innerText = el.dataset[lang];
+        });
+        localStorage.setItem('selectedLanguage', lang);
+        } 
     </script>
 </body>
 </html>
