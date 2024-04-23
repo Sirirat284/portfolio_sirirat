@@ -151,7 +151,54 @@
             </div>
         </div>
     </div>
-    
+
+    <div class="skills-container">
+        <h2 style="text-align: center; color: #0056b3;" >Soft Skills</h2>
+        <div class="other-skills-grid">
+            <div class="other-skill-item" data-skill="python">
+                <img src="image/icons8-problem-100.png" alt="problem-solving">
+                <h2 data-en="Problem Solving" data-th="แก้ไขปัญหาเฉพาะหน้า"></h2>
+                <p  data-en="My programming studies have refined my problem analysis and debugging skills."
+                    data-th="ด้วยการเรียนเขียนโปรแกรม ผมได้ฝึกวิเคราะห์ปัญหาและดีบักโปรแกรม."></p>
+            </div>
+            <div class="other-skill-item" data-skill="python">
+                <img src="image/icons8-critical-thinking-100.png" alt="critical-thinking">
+                <h2 data-en="Critical Thinking" data-th="การคิดวิเคราะห์"></h2>
+                <p  data-en="In my projects, I frequently utilize this skill, such as in my final year project."
+                    data-th="ในการทำโปรเจคของผมมักจะได้ใช้ความสามารถนี้อยู่มาก อย่างเช่นโปรเจคจบการศึกษาของผมเป็นต้น"></p>
+            </div>
+            <div class="other-skill-item" data-skill="python">
+                <img src="image/icons8-creativity-100.png" alt="creativity">
+                <h2 data-en="Creativity" data-th="ความคิดสร้างสรรค์"></h2>
+                <p  data-en="In many projects and activities, the ideas I propose are consistently implemented."
+                    data-th="ในหลายๆโปรเจคหรือหลายๆกิจกรรม ไอเดียที่ผมเสนอไปมักได้ถูกนำไปใช้เสมอ"></p>
+            </div>
+            <div class="other-skill-item" data-skill="python">
+                <img src="image/icons8-leadership-100.png" alt="leadership">
+                <h2 data-en="Leadership" data-th="การเป็นผู้นำ"></h2>
+                <p  data-en="My peers consistently trust me to take on the role of team leader in various projects and activities within my field of study."
+                    data-th="ผมมักจะถูกเพื่อนๆไว้ใจให้ทำหน้าที่หัวหน้าทีมในการทำโปรเจค หรือการทำกิจกรรมของภาควิชาอยู่เสมอ"></p>
+            </div>
+            <div class="other-skill-item" data-skill="python">
+                <img src="image/icons8-collaboration-100.png" alt="collaboration">
+                <h2 data-en="Collaboration and Teamwork" data-th="การทำงานร่วมกับผู้อื่น"></h2>
+                <p  data-en="Throughout my university studies, I have consistently engaged in group work with peers from my own and other disciplines. Additionally, I have contributed to various faculty and university events."
+                    data-th="ตลอดการเรียนที่มหาวิทยาลัย ผมได้ทำงานกลุ่มอยู่เสมอทั้งที่เป็นเพื่อนในสาขา และ ต่างสาขา อีกทั้งผมยังช่วยงานกิจกรรมต่างๆของทางคณะและมหาวิทยาลัยอีกด้วย"></p>
+            </div>
+            <div class="other-skill-item" data-skill="python">
+                <img src="image/icons8-flexibility-100.png" alt="Adaptability">
+                <h2 data-en="Adaptability and Flexibility" data-th="การปรับตัวและยืดหยุ่น"></h2>
+                <p  data-en="I am highly adaptable, as evidenced by my diverse project experience, which includes work on web applications, AI, and NLP."
+                    data-th="ผมมักจะสามารถปรับตัวไปกับงานได้ง่าย ถ้าหากสังเกตุจากโปรเจคที่ผมเคยทำที่มีทั้ง Web application, AI, NLP"></p>
+            </div>
+            <div class="other-skill-item" data-skill="python">
+                <img src="image/icons8-machine-learning-100.png" alt="Adaptability">
+                <h2 data-en="Curiosity and Continuous Learning" data-th="ความใฝ่รู้และไม่หยุดที่จะเรียนรู้"></h2>
+                <p  data-en="I am always eager to explore and experiment with new and interesting knowledge, not limited to the IT field, and I enjoy sharing these findings with my peers."
+                    data-th="ผมเป็นคนที่ชอบหาความรู้อะไรใหม่ๆที่น่าสนใจมาทดลองเสมอ ไม่ใช่แค่ในสายงาน IT เท่านั้น และผมก็ชอบแชร์ให้กับเพื่อนๆด้วย"></p>
+            </div>
+        </div>
+    </div>
 
     <div class="skills-container">
         <h2 style="text-align: center; color: #0056b3;" data-en="Tools" data-th="เครื่องมือที่ใช้เป็น"></h2>
@@ -757,6 +804,34 @@
             });
         });
 
+        document.addEventListener("DOMContentLoaded", function() {
+            // ค้นหาทุก .other-skill-item บนหน้า
+            var skillItems = document.querySelectorAll('.other-skill-item');
+
+            // ฟังก์ชั่นเพื่อเริ่มเอฟเฟ็ค
+            var showSkillItem = function(entries, observer) {
+                entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target); // หยุดสังเกตการณ์องค์ประกอบนี้หลังจากแสดงแล้ว
+                }
+                });
+            };
+
+            // สร้างตัวสังเกตการณ์ด้วยค่าคอนฟิก
+            var observer = new IntersectionObserver(showSkillItem, {
+                root: null, // ใช้หน้าจอเป็นพื้นที่การสังเกตการณ์
+                rootMargin: '0px',
+                threshold: 0.1 // 10% ขององค์ประกอบต้องปรากฏก่อนที่จะเรียกเอฟเฟ็ค
+            });
+
+            // ทำการสังเกตการณ์แต่ละ .other-skill-item
+            skillItems.forEach(function(skillItem) {
+                observer.observe(skillItem);
+            });
+            });
+
+        
         document.addEventListener('DOMContentLoaded', function() {
             var selectedLanguage = localStorage.getItem('selectedLanguage') || 'en'; // ตั้งค่าเริ่มต้นเป็น 'en' หากไม่มีการเลือกภาษาก่อนหน้า
             changeLanguage(selectedLanguage);

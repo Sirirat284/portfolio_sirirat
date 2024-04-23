@@ -224,6 +224,17 @@ body {
     font-size: 14px;
     padding: 0 10px;
 }
+.other-skill-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.other-skill-item.is-visible {
+    opacity: 1;
+    transform: none;
+}
+
 
 @media (max-width: 768px) {
     .other-skill-item {
