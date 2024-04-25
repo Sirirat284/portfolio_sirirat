@@ -5,3 +5,10 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+.social-media a img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-media a:hover img {
+    transform: scale(1.3); 
+}
